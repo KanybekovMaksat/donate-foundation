@@ -257,6 +257,7 @@
 
 
 .intro {
+    width: 100%;
     margin: 0 auto;
     max-height: 452px;
     background-repeat: no-repeat;
@@ -351,8 +352,8 @@
 
 
 .category {
+    position: relative;
     margin-top: 42px;
-
 }
 
 .category__content {
@@ -516,8 +517,12 @@
     position: relative;
     margin-top: 67px;
 }
-
+.swiper{
+    position: relative;
+}
 .slider__card {
+    position: relative;
+    width: 1250px;
     padding: 58px 46px 120px 46px;
 
     background-repeat: no-repeat;
@@ -565,14 +570,19 @@
     font-size: 16px;
     color: #FFFFFF;
 }
-
-.swiper-button-prev {
-    width: 30px;
-    background-image: url('./assets/images/prev-btn.svg ');
+.slider__controllers{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -200px
 }
-
-.swiper-button-next {
-    background-image: url('path/to/next-button-image.png');
+.swiper-next-button{
+    position: absolute;
+    left: -5%;
+}
+.swiper-prev-button{
+    position: absolute;
+    right: -7%;
 }
 
 /* slider styles end */
@@ -819,9 +829,9 @@
 /* footer styles end */
 
 .help {
-    position: fixed;
-    bottom: 4%;
-    right: 2%;
+    position: absolute;
+    top: 70%;
+    right: 6%;
     cursor: pointer;
     z-index: 99999;
 }
@@ -829,18 +839,18 @@
 .whatsapp {
     display: none;
     transition: all 0.3s ease;
-    position: fixed;
-    bottom: 6%;
-    right: 3%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
     z-index: 99998;
 }
 
 .telegram {
     display: none;
     transition: all 0.3s ease;
-    position: fixed;
-    bottom: 6%;
-    right: 3%;
+    position: absolute;
+    top: 40%;
+    right: 10%;
     z-index: 99998;
 }
 

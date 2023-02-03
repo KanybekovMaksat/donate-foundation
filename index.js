@@ -43,19 +43,59 @@ function changeText(selector, maxlength) {
  changeText('.blog__card-text', 120);
 
 
+ var slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+ function plusSlide() {
+     showSlides(slideIndex += 1);
+ }
+ 
+ /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+ function minusSlide() {
+     showSlides(slideIndex -= 1);  
+ }
+ 
+ /* Устанавливает текущий слайд */
+ function currentSlide(n) {
+     showSlides(slideIndex = n);
+ }
+ 
+ /* Основная функция слайдера */
+ function showSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName(" slider__card");
+   //   let dots = document.getElementsByClassName("slider-dots_item");
+     if (n > slides.length) {
+       slideIndex = 1
+     }
+     if (n < 1) {
+         slideIndex = slides.length
+     }
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+     }
+   //   for (i = 0; i < dots.length; i++) {
+   //       dots[i].className = dots[i].className.replace(" active", "");
+   //   }
+     slides[slideIndex - 1].style.display = "block";
+   //   dots[slideIndex - 1].className += " active";
+ }
+ 
 
-// const helpBtn = document.querySelector('.help')
-// const whatsapp = document.getElementById('whatsapp')
-// const telegram = document.getElementById('telegram')
-// const messageAll = document.getElementById('help-open')
-// const messageClose = document.getElementById('help-close')
+ 
+const helpBtn = document.querySelector('.help')
+const whatsapp = document.getElementById('whatsapp')
+const telegram = document.getElementById('telegram')
+const messageAll = document.getElementById('help-open')
+const messageClose = document.getElementById('help-close')
 
 
 
-// helpBtn.addEventListener('click', () => {
-//   whatsapp.classList.toggle('whatsapp-active');
-//   telegram.classList.toggle('telegram-active');
-//   messageClose.classList.toggle('help-close__active');
-//   messageAll.classList.toggle('message-all__active');
-// })
+helpBtn.addEventListener('click', () => {
+  whatsapp.classList.toggle('whatsapp-active');
+  telegram.classList.toggle('telegram-active');
+  messageClose.classList.toggle('help-close__active');
+  messageAll.classList.toggle('message-all__active');
+})
 
