@@ -1199,6 +1199,10 @@
         grid-template-rows: repeat(2, 1fr);
     }
 
+    .aboutus__item {
+        margin-left: 30px;
+    }
+
     .aboutus__item-img {
         width: 55px;
         height: 55px;

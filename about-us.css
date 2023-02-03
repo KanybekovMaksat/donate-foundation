@@ -1,0 +1,146 @@
+/* intro styles start */
+
+.blog-intro {
+    background-image: url(./assets/images/about-us-intro-bg.jpg);
+}
+
+.bintro__content {
+    padding: 70px 0px 103px 0px;
+}
+
+.bintro__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+    color: #2C2C2C;
+}
+
+.bintro__subtitle {
+    margin-top: 12px;
+
+    font-size: 18px;
+    line-height: 27px;
+    color: #111111;
+}
+
+/* intro styles end */
+
+
+.text-page {
+    margin: 40px 0;
+}
+
+.text-page p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #2C2C2C;
+
+    margin-bottom: 10px;
+}
+
+.video-page {
+    text-align: center;
+}
+
+.video-page iframe {
+    border-radius: 20px;
+
+    width: 748px;
+    height: 382.98px;
+}
+
+.bank-accounts {
+    border-radius: 20px;
+}
+
+.bank-accounts__content {
+    background-image: url(./assets/images/bank-accounts-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+.bank-accounts__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.bank-accounts__subtitle {
+    max-width: 1177px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-top: 25px;
+}
+
+.bank-accounts__btn {
+    padding: 10px 90px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 0px 14px rgba(0, 255, 114, 0.6));
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    margin: 40px;
+}
+
+@media screen and (max-width: 769px) {
+    .video-page iframe {
+        width: 100%;
+        height: 250px;
+    } 
+
+
+    .bank-accounts__title {
+        font-size: 35px;
+    } 
+    .bank-accounts__subtitle {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .bank-accounts__btn {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-page iframe {
+        height: 200px;
+    } 
+
+
+    .bank-accounts__title {
+        font-size: 30px;
+    } 
+    .bank-accounts__subtitle {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .bank-accounts__btn {
+        margin: 15px 0;
+    }
+}
