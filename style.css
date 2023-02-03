@@ -590,7 +590,7 @@
 
 
 /* Blog start */
-/* .blog__content {
+.blog__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -610,76 +610,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.blog__card {
-    max-width: 393px;
-
-    padding: 15px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-}
-
-.blog__card-date {
-    font-family: 'Poppins';
-    font-size: 14px;
-    color: #8A8A8A;
-}
-
-.blog__card-title {
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 16px;
-    color: #111111;
-}
-
-.blog__card-text {
-    font-family: 'Poppins';
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.blog__card-link {
-    text-decoration: none;
-
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--primary-color);
-} */
-
-.blog-news {
-    margin-top: 24px;
-}
-
-.bnews__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bnews__wrapper {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.bnews__btn {
-    margin-top: 36px;
-
-    padding: 15px 42px;
-
-    border: none;
-    background: var(--primary-color);
-    box-shadow: 0px 0px 14px rgba(228, 228, 228, 0.6);
-    border-radius: 7px;
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-}
 
 /* blog news section styles end */
 
@@ -732,6 +662,8 @@
     font-size: 16px;
     color: var(--primary-color);
 }
+
+
 
 
 .difference {
@@ -1131,7 +1063,7 @@
     }
 
 
-    /* .blog__card {
+    .blog__card {
         max-width: 320px;
     }
 
@@ -1145,7 +1077,7 @@
         row-gap: 35px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-    } */
+    }
 
 
     .difference__title {
@@ -1316,7 +1248,7 @@
 
 
 
-    /* .blog__card {
+    .blog__card {
         max-width: 320px;
     }
 
@@ -1330,7 +1262,7 @@
         row-gap: 35px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-    } */
+    }
 
 
 
@@ -1397,13 +1329,13 @@
         align-self: center;
     }
 
-    /* .blog__card {
+    .blog__card {
         max-width: 350px;
     }
 
     .blog__card-img img {
         max-width: 100%;
-    } */
+    }
 
 
 
@@ -1417,11 +1349,11 @@
 }
 
 @media screen and (min-width:768px) and (max-width: 1200px) {
-    /* .blog__wrapper {
+    .blog__wrapper {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
         gap: 15px;
-    } */
+    }
 
     .partners__content {
         column-gap: 50px;
