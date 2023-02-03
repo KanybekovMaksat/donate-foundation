@@ -161,7 +161,14 @@ body {
 }
 
 /* blog card styles end */
-
+@media screen and (max-width:480px) {
+    .blog__card-title{
+        font-size: 12px;
+    }
+    .blog__card-text{
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 1200px) {
     .bnews__wrapper {
         width: 100%;
