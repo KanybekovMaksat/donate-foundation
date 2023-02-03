@@ -853,7 +853,7 @@
     top: 70%;
     right: 6%;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 99;
 }
 
 .whatsapp {
@@ -862,7 +862,7 @@
     position: absolute;
     top: 70%;
     right: 6%;
-    z-index: 99998;
+    z-index: 8;
 }
 
 .telegram {
@@ -871,7 +871,7 @@
     position: absolute;
     top: 70%;
     right: 6%;
-    z-index: 99998;
+    z-index: 8;
 }
 
 .whatsapp img,
@@ -882,12 +882,12 @@
 
 .telegram-active {
     display: block;
-   top: -120px;
+   top: 120px;
 }
 
 .whatsapp-active {
     display: block;
-    top: -250px;
+    top: 250px;
 }
 
 .help-close {
@@ -1405,7 +1405,6 @@
         margin: 0 auto;
     }
 
-
     .footer__content {
         padding: 35px 20px;
     }
@@ -1438,6 +1437,8 @@
         max-width: 120px;
     }
 
+    /* kUMaOriGinaL */
+
 }
 
 
@@ -1467,18 +1468,15 @@
 
 
 @media screen and (max-width:480px) {
-        /* base styles start */
-        .container {
-            max-width: 320px;
-            margin: 0 auto;
-        }
-    
-    
-        .navbar {
-            padding: 0px 10px;
-        }
 
+    .container {
+        max-width: 320px;
+         margin: 0 auto;
+    }
     
+    .navbar {
+      padding: 0px 10px;
+    }
         
     .header__btn {
         padding: 5px;
@@ -1519,7 +1517,31 @@
     }
 
 }
+@media screen  and (max-width:815px){
+    .header__menu-btn{
+        display: block;
+    }
+    .header__btn{
+        display: none;
+    }
+    .navbar{
+        flex-direction: row-reverse;
+    }
+    .category__content{
+        align-items: center;
+    }
+    .category__card:first-child{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .category__card:last-child{
+        border-radius:0px 0px 20px 20px;
+    }
+    .help{
+        top: -20px;
+        right: 70px;
+    }
 
+}
 @media only screen and (min-width: 48rem) {
     .header__burger {
         display: none;
