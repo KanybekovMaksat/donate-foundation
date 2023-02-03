@@ -39,48 +39,51 @@ function changeText(selector, maxlength) {
      }
    }
  }
- changeText('blog__card-title', 30)
+ const tt = "Assanabil has established, equipped and furnished more than 40 dispensaries and medical centers in the areas in need, and has also supported many government hospitals with the necessary medical devices. The foundation implements and operates many medical convoys and surgical and specialized"
+ console.log(tt.length);
+ changeText('.blog__card-title', 70);
+ changeText('.slider__card-text', 290)
  changeText('.blog__card-text', 120);
 
 
- var slideIndex = 1;
- showSlides(slideIndex);
+//  var slideIndex = 1;
+//  showSlides(slideIndex);
  
- /* Функция увеличивает индекс на 1, показывает следующй слайд*/
- function plusSlide() {
-     showSlides(slideIndex += 1);
- }
+//  /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+//  function plusSlide() {
+//      showSlides(slideIndex += 1);
+//  }
  
- /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
- function minusSlide() {
-     showSlides(slideIndex -= 1);  
- }
+//  /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+//  function minusSlide() {
+//      showSlides(slideIndex -= 1);  
+//  }
  
- /* Устанавливает текущий слайд */
- function currentSlide(n) {
-     showSlides(slideIndex = n);
- }
+//  /* Устанавливает текущий слайд */
+//  function currentSlide(n) {
+//      showSlides(slideIndex = n);
+//  }
  
- /* Основная функция слайдера */
- function showSlides(n) {
-     let i;
-     let slides = document.getElementsByClassName(" slider__card");
-   //   let dots = document.getElementsByClassName("slider-dots_item");
-     if (n > slides.length) {
-       slideIndex = 1
-     }
-     if (n < 1) {
-         slideIndex = slides.length
-     }
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-     }
-   //   for (i = 0; i < dots.length; i++) {
-   //       dots[i].className = dots[i].className.replace(" active", "");
-   //   }
-     slides[slideIndex - 1].style.display = "block";
-   //   dots[slideIndex - 1].className += " active";
- }
+//  /* Основная функция слайдера */
+//  function showSlides(n) {
+//      let i;
+//      let slides = document.getElementsByClassName(" slider__card");
+//    //   let dots = document.getElementsByClassName("slider-dots_item");
+//      if (n > slides.length) {
+//        slideIndex = 1
+//      }
+//      if (n < 1) {
+//          slideIndex = slides.length
+//      }
+//      for (i = 0; i < slides.length; i++) {
+//          slides[i].style.display = "none";
+//      }
+//    //   for (i = 0; i < dots.length; i++) {
+//    //       dots[i].className = dots[i].className.replace(" active", "");
+//    //   }
+//      slides[slideIndex - 1].style.display = "block";
+//    //   dots[slideIndex - 1].className += " active";
+//  }
  
 
  
