@@ -39,11 +39,11 @@ function changeText(selector, maxlength) {
      }
    }
  }
- changeText('blog__card-title', 35)
+ changeText('blog__card-title', 30)
  changeText('.blog__card-text', 120);
 
 
- 
+
 // const helpBtn = document.querySelector('.help')
 // const whatsapp = document.getElementById('whatsapp')
 // const telegram = document.getElementById('telegram')
