@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --primary-color:#0BBC5A;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1235px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.donate{
+    margin-top: 41px;
+}
+.donate__content{
+    display: grid;
+    grid-template-columns: repeat(2, 625px);
+}
+
+.donate__left {
+    display: block;
+}
+
+.donate__title{
+    font-family: 'Poppins';     
+    font-weight: 500;
+    font-size: 40px;
+    color: #2C2C2C;   
+}
+
+.donate__left-text{
+    max-width: 525px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #2C2C2C; 
+}
+
+.donate__send-form-inputs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    max-width: 625px;
+    padding: 50px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(51, 51, 51, 0.1);
+    border-radius: 20px;
+}
+
+.donate__send-form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 0.2fr 0.2fr;
+}
+
+.donate__send-form-input, .donate__send-form-select{
+    margin: 5px 0px;
+    padding: 18px;
+    max-width: 545px;
+    max-height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #7A7A7A;
+    border-radius: 7px;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #151515;
+}
+
+.donate__send-form-text {
+    grid-row: 1/3;
+    
+    padding: 18px;
+    border: 1px solid #7A7A7A;
+    border-radius: 7px;
+    
+    width: 565px;
+    height: 143px;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #151515;
+}
+
+.donate__send-form-select {
+    color: #737373;
+}
+
+select {
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(./assets/images/select-arrow.svg);
+}
+
+
+.donate__send-form-btn{
+    max-width: 625px;
+    max-height: 60px;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: white;
+    background: var(--primary-color);
+    border: 1px solid #7A7A7A;
+    border-radius: 7px;
+}
+
+
+.donate__send-form-scroll {
+    margin: 0 auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 480px){
+    .donate{
+        margin-top: 30px;
+    }
+    .donate__content,.donate__left{
+        align-items: center;
+    }
+    .donate__left-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .donate__title {
+        text-align: center;
+    }
+
+    .donate__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .donate__send-form {
+        width: 100%;
+        justify-items: center;
+    }
+    
+    .donate__send-form-btn {
+        width: 100%;
+    }
+    
+    .donate__send-form-inputs {
+        width: 100%;
+        margin-top: 30px;
+    }
+}   
