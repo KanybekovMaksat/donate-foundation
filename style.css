@@ -840,8 +840,8 @@
     display: none;
     transition: all 0.3s ease;
     position: absolute;
-    top: 30%;
-    right: 10%;
+    top: 70%;
+    right: 6%;
     z-index: 99998;
 }
 
@@ -849,8 +849,8 @@
     display: none;
     transition: all 0.3s ease;
     position: absolute;
-    top: 40%;
-    right: 10%;
+    top: 70%;
+    right: 6%;
     z-index: 99998;
 }
 
@@ -862,12 +862,12 @@
 
 .telegram-active {
     display: block;
-    bottom: 250px;
+   top: -120px;
 }
 
 .whatsapp-active {
     display: block;
-    bottom: 150px;
+    top: -250px;
 }
 
 .help-close {
@@ -875,46 +875,61 @@
 }
 
 .help-close__active {
+    right: 6%;  
     display: block;
 }
 
 .help-open {
+    right: 6%;  
     display: block;
 }
 
 .message-all__active {
+
+    display: none;
+}
+.header__menu-btn{
     display: none;
 }
 
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width:300px) and (max-width: 480px) {
     .container {
         max-width: 320px;
         margin: 0 auto;
     }
-
+    .navbar{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .button {
         padding: 10px 42px;
         font-size: 14px;
     }
-
+    .logo{
+        width: 200px;
+        margin-left: -100px;
+    }
     .secondary-button {
         padding: 10px 35px;
         font-size: 14px;
     }
 
-    .topbar__content-info {
+    .topbar__language{
         display: none;
     }
 
-    .topbar__nav {
-        margin: 0;
-        margin-right: 100px;
+    .topbar__info-link:nth-child(2),.topbar__info-link:last-child{
+        display: none;
     }
-
+    .header__btn{
+        display: none;
+    }
     .header {
         padding: 10px;
         margin: 0px;
+    }
+    .topbar__info-link p {
+        display: block;
     }
 
     .header__nav {
@@ -925,9 +940,6 @@
         margin: 0px;
     }
 
-    .header__logo img {
-        display: none;
-    }
 
     .header__content {
         align-items: start;
@@ -951,53 +963,18 @@
         transition: .3s
     }
 
-    .header__burger_active {
-        display: flex;
-        height: 40px;
-    }
-    .header__burger_active>.header__burger-item:first-child {
-        transform: translateY(10px) rotate(45deg);
-    }
 
-    .header__burger_active>.header__burger-item:nth-child(2) {
+
+
+    .intro{
         display: none;
     }
-
-    .header__burger_active>.header__burger-item:last-child {
-        transform: translateY(-26px) rotate(-45deg);
-    }
-
-    .header__nav-list {
-        display: none;
-    }
-
-    .header__list-item {
-        margin: 10px 0px;
-    }
-
-    .header__nav_active {
-        display: flex;
-        flex-direction: column;
-    }
-    .active{
-        width: 100%;
-        top:0;
-        position: fixed;
-        background: #0BBC5A;
-        z-index: 999;
-    }
-    .header__active {
-        background: #0BBC5A;
-    }
-
-
-
-
     .aboutus__content {
-        display: grid;
+        display: flex;
+        /* display: grid;
         row-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); */
     }
 
     .aboutus__item-img {
@@ -1032,6 +1009,7 @@
         
     }
     .moreaus__video iframe{
+        margin-top: 34px;
         width: 100%;
         height: 200px;
     }
@@ -1043,21 +1021,20 @@
 
 
 
-    .category__card:first-child,
-    .category__card:last-child {
-        border-radius: 0px;
+    .category__card:first-child{
+        border-radius: 20px 20px 0px 0px;
     }
-
-    .category__card {
-        margin: 10px 0px;
+    .category__card:last-child {
+        border-radius: 0px 0px 20px 20px;
     }
 
     .partners__content {
-        display: grid;
+        display: flex;
+        /* display: grid;
 
         column-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        justify-items: center; */
     }
 
     .partners__item-img {
@@ -1412,11 +1389,6 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .logo{
-        max-width: 100px;
-    }
-}   
 
 
 
@@ -1503,23 +1475,9 @@
         .navbar {
             padding: 0px 10px;
         }
-        /* topbar */
+
     
-        .topbar__content-info {
-            display: none;
-        }
-    
-        .topbar__nav {
-            margin: 0;
-            margin-right: 100px;
-        }
-
-        /* topbar */
-
-    .logo {
-        width: 120px;
-    }
-
+        
     .header__btn {
         padding: 5px;
         font-size: 14px;
@@ -1587,7 +1545,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width:480px)  and (max-width: 1200px) {
 
     .topbar__content {
         justify-content: space-around;
