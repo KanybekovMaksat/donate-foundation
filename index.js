@@ -29,6 +29,21 @@ if (burgerMenu && navbarMenu) {
  });
  
 
+ // Сокращение текста
+
+function changeText(selector, maxlength) {
+   for (let el of document.querySelectorAll(selector)) {
+     let txt = el.textContent; 
+     if (txt.length > maxlength) {
+       el.innerHTML = `<span title="${txt}">${txt.slice(0, maxlength)}...</span>`;
+     }
+   }
+ }
+ changeText('blog__card-title', 35)
+ changeText('.blog__card-text', 120);
+
+
+ 
 // const helpBtn = document.querySelector('.help')
 // const whatsapp = document.getElementById('whatsapp')
 // const telegram = document.getElementById('telegram')
