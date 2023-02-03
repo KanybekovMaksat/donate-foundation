@@ -914,7 +914,7 @@
 
 @media screen and (min-width:300px) and (max-width: 480px) {
     .container {
-        max-width: 320px;
+        max-width: 325px;
         margin: 0 auto;
     }
     .navbar{
@@ -922,7 +922,7 @@
         flex-direction: row-reverse;
     }
     .button {
-        padding: 10px 42px;
+        padding: 10px 2px;
         font-size: 14px;
     }
     .logo{
@@ -930,7 +930,8 @@
         margin-left: -100px;
     }
     .secondary-button {
-        padding: 10px 35px;
+        margin-right: 10px;
+        padding: 10px 10px;
         font-size: 14px;
     }
 
@@ -985,9 +986,22 @@
 
 
 
-
-    .intro{
-        display: none;
+    .intro__content{
+        padding: 23px;
+    }
+    .intro__title{
+        max-width: 325px;
+        font-size: 23px;
+        line-height: 36px;
+    }
+    .intro__subtitle{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .intro__links{
+        margin: 0;
+        display: flex;
+        align-items: center;
     }
     .aboutus__content {
         display: flex;
@@ -1123,7 +1137,27 @@
         width: 70px;
         height: 70px;
     }
-    
+    .slider__card{
+        padding: 20px;
+        border-radius: 24px;
+        max-width: 324px;
+        height: auto;
+    }
+    .slider__card:first-child,.slider__card:first-child,.slider__card:nth-child(2),.slider__card:nth-child(3),.slider__card:last-child{
+        background-image: url(./assets/images/slider-mobile.jpg);
+    }
+    .slider__card-title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .slider__card-text{
+        margin: 0px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
 }
 
 
@@ -1439,15 +1473,6 @@
             margin: 0 auto;
         }
     
-        .button {
-            padding: 10px 42px;
-            font-size: 14px;
-        }
-    
-        .secondary-button {
-            padding: 10px 35px;
-            font-size: 14px;
-        }
     
         .navbar {
             padding: 0px 10px;

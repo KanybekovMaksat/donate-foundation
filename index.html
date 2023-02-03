@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -57,9 +61,9 @@
           </div>
         </div>
       </div>
+      
       <!-- topbar end -->
-    
-    
+
       <!-- header start -->
     
       <header class="header" id="header">
@@ -94,7 +98,6 @@
      </header>
       <!-- header end -->
 
-
     <main class="main">
         
         <section class="intro">
@@ -121,40 +124,43 @@
             </div>
         </section>
 
-        <section class="aboutus">
+        <section class="swiper aboutus">
             <div class="container">
-                <div class="aboutus__content">
-                    <div class="aboutus__item">
+                <div class="aboutus__content aboutus-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide aboutus__item ">
                         <img src="./assets/images/schedule.png" alt="schedule" class="aboutus__item-img">
                         <div class="aboutus__item-info">
                             <p class="aboutus__item-title">19</p>
                             <p class="aboutus__item-subtitle">Years</p>
                         </div>
                     </div>
-                    <div class="aboutus__item">
+                    <div class="swiper-slide aboutus__item">
                         <img src="./assets/images/projects.png" alt="" class="aboutus__item-img">
                         <div class="aboutus__item-info">
                             <p class="aboutus__item-title">150+</p>
                             <p class="aboutus__item-subtitle">projects</p>
                         </div>
                     </div>
-                    <div class="aboutus__item">
+                    <div class="swiper-slide aboutus__item">
                         <img src="./assets/images/country.png" alt="" class="aboutus__item-img">
                         <div class="aboutus__item-info">
                             <p class="aboutus__item-title">7</p>
                             <p class="aboutus__item-subtitle">countries </p>
                         </div>
                     </div>
-                    <div class="aboutus__item">
+                    <div class="swiper-slide aboutus__item">
                         <img src="./assets/images/partners.png" alt="" class="aboutus__item-img">
                         <div class="aboutus__item-info">
                             <p class="aboutus__item-title">25</p>
                             <p class="aboutus__item-subtitle">partners</p>
                         </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </section>
+
         <section class="category">
             <div class="container">
                 <div class="category__content">
@@ -166,11 +172,9 @@
                                 <a href="#" class="category__bottom-btn">Learn more</a>
                             </div>
                         </div>
-
                     </div>
                     <div class="category__card">
                         <div class="category__card-content">
-        
                             <div class="category__card-bottom">
                                 <h3 class="category__card-title">Wells</h3>
                                 <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres...</p>
@@ -221,6 +225,7 @@
               </div>
           </div>
         </section>
+
       <!-- our partners start -->
       <section class="moreaus">
         <div class="container">
@@ -237,51 +242,54 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class=" swiper partners">
         <div class="container">
-          <div class="partners__content">
-            <div class="partners__item">
-              <img
-                src="./assets/images/partners-firtst.png"
-                alt=""
-                class="partners__item-img"
-              />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partners-second.png"
-                alt=""
-                class="partners__item-img"
-              />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partners-third.png"
-                alt=""
-                class="partners__item-img"
-              />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partners-fourteen.png"
-                alt=""
-                class="partners__item-img"
-              />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partners-fiveteen.png"
-                alt=""
-                class="partners__item-img"
-              />
-            </div>
-            <div class="partners__item">
+          <div class="partners__content partners__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide partners__item">
                 <img
-                  src="./assets/images/partners-sixteen.png"
+                  src="./assets/images/partners-firtst.png"
                   alt=""
                   class="partners__item-img"
                 />
               </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="./assets/images/partners-second.png"
+                  alt=""
+                  class="partners__item-img"
+                />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="./assets/images/partners-third.png"
+                  alt=""
+                  class="partners__item-img"
+                />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="./assets/images/partners-fourteen.png"
+                  alt=""
+                  class="partners__item-img"
+                />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="./assets/images/partners-fiveteen.png"
+                  alt=""
+                  class="partners__item-img"
+                />
+              </div>
+              <div class="swiper-slide partners__item">
+                  <img
+                    src="./assets/images/partners-sixteen.png"
+                    alt=""
+                    class=" partners__item-img"
+                  />
+                </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -337,20 +345,6 @@
                   families and people with special needs.
                 </p>
                 <button class="slider__card-btn">More</button>
-              </div>
-            </div>
-            <div class="slider__controllers">
-              <div class="swiper-prev-button"  onclick="minusSlide()">
-                <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20.25" stroke="#0BBC5A" stroke-width="1.5"/>
-                  <path d="M18.7144 14.1428L25.5715 21L18.7144 27.8571" stroke="#0BBC5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-              </div>
-              <div class="swiper-next-button" onclick="plusSlide()">
-                <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20.25" stroke="#0BBC5A" stroke-width="1.5"/>
-                  <path d="M23.2856 14.1428L16.4285 21L23.2856 27.8571" stroke="#0BBC5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>         
               </div>
             </div>
           </div>
@@ -613,19 +607,42 @@
 
     <!-- footer end -->
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
         var swiper = new Swiper(".slider__content", {
           grabCursor: true,
           spaceBetween: 50,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+
         });
-    </script> -->
+
+        var slider = new Swiper(".partners__slider", {
+          slidesPerView:3,
+          grabCursor: true,
+          spaceBetween: 10,
+          breakpoints: {
+          640: {
+            slidesPerView: 6,
+            spaceBetween: 10
+    }
+  }
+        })
+
+        var sliderAbout = new Swiper(".aboutus-slider", {
+          slidesPerView:2,
+          spaceBetween:140,
+          grabCursor: true,
+          spaceBetween: 5,
+          breakpoints: {
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 140
+    }
+  }
+        })
+        
+    </script>
     <script  src="./index.js"></script>
   </body>
 </html>
