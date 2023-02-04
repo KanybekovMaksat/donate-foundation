@@ -1,21 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-:root{
-    --primary-color:#0BBC5A;
-}
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    max-width: 1235px;
-    margin: 0 auto;
-    height: 100%;
-    padding: 0 15px;
-}
 
 .donate{
     margin-top: 41px;
