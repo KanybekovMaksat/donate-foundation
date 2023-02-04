@@ -17,8 +17,9 @@
 }
 
 .container {
-    max-width: 1250px;
+    max-width: 1235px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .secondary-button{
@@ -310,11 +311,6 @@
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-    .container {
-        max-width: 480px;
-        margin: 0 auto;
-    }
-
 
     .footer__content {
         padding: 35px 20px;
@@ -991,7 +987,7 @@
 .slider__card {
     position: relative;
     width: 100%;
-    padding: 58px 46px 120px 46px;
+    padding: 58px 46px 60px 46px;
 
     background-repeat: no-repeat;
 }
