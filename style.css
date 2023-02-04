@@ -702,11 +702,30 @@
     .intro__counter-line{
         max-height: 40px;
     }
+    .intro__item-title{
+        font-size:18px ;
+    }
+    .intro__counter-line{
+        max-height: 40px;
+    }
 }
 @media screen and (min-width:1200px) {
     .intro__content{
         padding: 70px 250px;
     }
+    .intro__title{
+        font-size: 35px;
+    }
+    .intro__item-title{
+        font-size:26px ;
+    }
+}
+
+.intro__title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2C2C2C;
+}
     .intro__title{
         font-size: 35px;
     }
@@ -900,7 +919,7 @@
 /* partners styles start */
 
 .partners {
-    margin: 58px 0px;
+    margin: 45px 0px;
 }
 
 .partners__content {
@@ -990,7 +1009,7 @@
 .slider__card {
     position: relative;
     width: 100%;
-    padding: 58px 46px 60px 46px;
+    padding: 58px 46px 120px 46px;
 
     background-repeat: no-repeat;
 }
@@ -1008,6 +1027,15 @@
 
 .slider__card:last-child {
     background-image: url(./assets/images/slider-images-fourteen.png);
+}
+
+.slider__card:first-child,
+.slider__card:nth-child(2),
+.slider__card:nth-child(3),
+.slider__card:last-child {
+    background-position: center;
+    height: 100%;
+    border-radius: 29px;
 }
 
 .slider__card-title {
