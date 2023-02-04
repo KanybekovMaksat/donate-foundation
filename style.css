@@ -32,6 +32,11 @@
     font-size: 16px;
     line-height: 21px;
     color: #0BBC5A;
+    transition: all 0.2s ease;
+}
+.secondary-button:hover{
+    color: white;
+    background: #0BBC5A;
 }
 .button {
     padding: 14px 31px;
@@ -44,8 +49,13 @@
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
+    transition: all 0.2s ease;
 }
-
+.button:hover{
+    color: #0BBC5A;
+    border: 1px solid #0BBC5A;
+    background: transparent;
+}
 .topbar {
     background: var(--primary-color);
 }
@@ -444,7 +454,7 @@
 
 }
 
-@media screen and (min-width:481px) and (max-width:799px) {
+@media screen and (min-width:481px) and (max-width:800px) {
     .topbar__content {
         padding: 10px 20px;
     }
@@ -487,7 +497,7 @@
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:799px) {
     .navbar {
         padding: 0px 30px;
     }
@@ -563,7 +573,7 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1070px) {
 
     .header__menu-link {
         margin: 0px 7px;
@@ -666,10 +676,6 @@
     }
 
 }
-/* @media screen and (min-width:1201px) {
-    
-} */
-
 
 
 .intro__wrapper {
@@ -822,16 +828,23 @@
 .intro__links {
     margin-top: 37px;
 }
-
+@media screen and (min-width:1000px) {
+    .intro__content{
+        padding: 100px 150px 150px 150px;
+    }
+}
 .aboutus {
     margin-top: 65px;
 }
 
 .aboutus__content {
+    padding:0px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.aboutus__item-img{
+    width: 60px;
+}
 .aboutus__item {
     display: flex;
     align-items: center;
@@ -844,14 +857,14 @@
 .aboutus__item-title {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     text-transform: capitalize;
     color: #0BBC5A;
 }
 
 .aboutus__item-subtitle {
     font-family: 'Poppins';
-    font-size: 19px;
+    font-size: 16px;
     color: #0BBC5A;
 }
 
@@ -891,7 +904,6 @@
 }
 
 .category__card-title {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 24px;
     line-height: 25px;
@@ -901,7 +913,6 @@
 
 .category__bottom-subtitle {
     margin: 20px 0px 13px 0px;
-    font-family: 'Poppins';
     font-size: 14px;
     text-align: center;
     color: #FFFFFF;
@@ -914,9 +925,7 @@
     filter: drop-shadow(0px 0px 14px rgba(0, 255, 114, 0.6));
     border-radius: 7px;
 
-
     text-decoration: none;
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -952,14 +961,6 @@
 .category__card:hover .category__card-content .category__card-bottom {
     top: 2%;
 }
-@media screen and (min-width:769px)  {
-    .category__content{
-        display: grid;
-        grid-template-columns: repeat(2,fr);
-        grid-template-rows: repeat(2,1fr);
-    }
-}
-/* partners styles start */
 
 .partners {
     margin: 45px 0px;
@@ -1032,7 +1033,7 @@
     border-radius: 20px;
 }
 
-.moreaus__video button {
+.moreaus__video-play{
     position: absolute;
     top: 35%;
     left: -50px;
@@ -1531,7 +1532,7 @@
         grid-template-rows: repeat(3, 1fr);
     }
     .blog__card-title{
-        font-size: 14px;
+        font-size: 12px;
     }
     .blog__card-text{
         font-size: 12px;
@@ -1637,7 +1638,11 @@
         padding: 12px 60px;
     }
 }
-
+@media screen and (min-width:1000px) {
+    .blog__title{
+        margin-top: 50px;
+    }
+}
 @media screen and (min-width:481px) and (max-width:768px) {
     .blog__button{
         margin: 20px 42px;
@@ -1774,7 +1779,7 @@
         flex-direction: column;
     }
     .message__send-input, .message__send-btn, .message__send-text{
-        max-width: 280px;
+        width: 95%;
     }
     .message__send {
         margin-top: 30px;
@@ -1853,10 +1858,6 @@
     .slider__card-btn {
         padding: 12px 60px;
     }
-}
-@media screen and (min-width:481px) and (max-width:768px) {
-
-
     .button {
         padding: 10px 35px;
         font-size: 14px;
@@ -1925,11 +1926,12 @@
         flex-direction: column;
     }
 
-    .category__card:first-child,
-    .category__card:last-child {
-        border-radius: 0px;
+    .category__card:first-child {
+        border-radius: 20px 20px 0px 0px;
     }
-
+    .category__card:last-child {
+        border-radius: 0px 0px 20px 20px;
+    }
 
 
     .partners__content {
@@ -2033,6 +2035,12 @@
     .blog__card-img img {
         max-width: 100%;
     }
+    .intro__content{
+        padding: 30px ;
+    }
+    .intro__title{
+        font-size: 28px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 1200px) {
@@ -2092,7 +2100,7 @@
 
 
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:720px) and (max-width:1220px) {
 
     .category__content {
         display: grid;

@@ -200,7 +200,7 @@
                         <div class="category__card-content">
                             <div class="category__card-bottom">
                                 <h3 class="category__card-title">Health</h3>
-                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres...</p>
+                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres</p>
                                 <a href="#" class="category__bottom-btn">Learn more</a>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                         <div class="category__card-content">
                             <div class="category__card-bottom">
                                 <h3 class="category__card-title">Wells</h3>
-                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres...</p>
+                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres</p>
                                 <a href="#" class="category__bottom-btn">Learn more</a>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                         <div class="category__card-content">
                             <div class="category__card-bottom">
                                 <h3 class="category__card-title">Education</h3>
-                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres...</p>
+                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres</p>
                                 <a href="#" class="category__bottom-btn">Learn more</a>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                         <div class="category__card-content">
                             <div class="category__card-bottom">
                                 <h3 class="category__card-title">Community Development</h3>
-                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres...</p>
+                                <p class="category__bottom-subtitle">Kyrgyzstan suffers from a limited number of schools required, in addition to the weak capabilities and the need for modern educational devices and means, and the need for qualified educators religious administrative and educational cadres</p>
                                 <a href="#" class="category__bottom-btn">Learn more</a>
                             </div>
                         </div>
@@ -244,8 +244,8 @@
                     <a href="#" class="moreaus__btn">Learn More</a>
                 </div>
                 <div class="moreaus__video">
-                    <iframe width="620" height="315" src="https://www.youtube.com/embed/5nDY1he1WMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <button><img src="./assets/images/video-play.svg" alt=""></button>
+                    <iframe width="620" height="315"  id="youtube-video" src="https://www.youtube.com/embed/5nDY1he1WMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/5nDY1he1WMo" target="_blank" class="moreaus__video-play"><img src="./assets/images/video-play.svg" alt=""></a>
                   </div>
             </div>
         </div>
@@ -302,7 +302,6 @@
           </div>
         </div>
       </section>
-
       <section class="slider">
         <div class="container slider__container">
           <div class="swiper slider__content">
@@ -463,13 +462,15 @@
               <form action="" class="message__send-form">
                 <input
                   type="text"
-                  id="first__name"
+                  name="email"
+                  id="first_name" 
                   placeholder="Your name"
                   class="message__send-input"
                 />
                 <input
-                  type="number"
-                  id="telephone__number"
+                  type="tel"
+                  name="number"
+                  id="phone"
                   placeholder="Phone number"
                   class="message__send-input"
                 />
@@ -480,8 +481,9 @@
                 ></textarea>
                 <input
                   type="submit"
+      
                   value="Send message"
-                  class="message__send-btn"
+                  class="message__send-btn button"
                 />
               </form>
             </div>
