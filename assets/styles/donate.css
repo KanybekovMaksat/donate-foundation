@@ -32,26 +32,42 @@
 .donate__send-form-inputs {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    width: 600px;
+    height: 230px;
+
     padding: 50px 40px;
+    margin-top: 20px;
+
     background: #FFFFFF;
     box-shadow: 0px 10px 40px rgba(51, 51, 51, 0.1);
     border-radius: 20px;
 }
 
-.donate__send-form{
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.donate__send-form {
+    text-align: center;
 }
 .donate__send-form-inner {
-    width: 600px; 
+    width: 700px; 
+    height: 300px;
 }
-.donate-form__pagination {
+.donate-form__pagination span {
+    background-color: var(--primary-color);
 }
 
 .donate__send-form-input, .donate__send-form-select{
     margin: 5px 0px;
     padding: 18px;
-    max-width: 545px;
-    max-height: 60px;
+    width: 100%;
+    height: 60px;
     background: #FFFFFF;
     border: 1px solid #7A7A7A;
     border-radius: 7px;
@@ -90,8 +106,8 @@ select {
 
 
 .donate__send-form-btn{
-    max-width: 625px;
-    max-height: 60px;
+    width: 600px;
+    height: 50px;
 
     font-family: 'Poppins';
     font-size: 16px;
@@ -100,7 +116,6 @@ select {
     border: 1px solid #7A7A7A;
     border-radius: 7px;
 
-    margin: 0 auto;
 }
 
 
@@ -125,18 +140,45 @@ select {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-items: center;
     }
     .donate__send-form {
         width: 100%;
         justify-items: center;
     }
-    
-    .donate__send-form-btn {
-        width: 100%;
-    }
+
     
     .donate__send-form-inputs {
         width: 100%;
         margin-top: 30px;
     }
 }   
+
+@media screen and (max-width:1200px) { 
+    
+    .donate__send-form-inputs { 
+        width: 580px;
+    
+        padding: 50px 40px;
+    }
+    .donate__send-form-inner {
+        width: 650px; 
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .donate__send-form-inputs { 
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .donate__send-form-inner {
+        width: 100%; 
+        height: 300px;
+    }
+    .donate__send-form-btn{
+        width: 100%;
+        height: 50px;
+    }
+}

@@ -60,7 +60,7 @@ var introSlide = new Swiper(".intro__slider", {
   },
 });
 
-var introSlide = new Swiper(".donate__send-form-inner", {
+var DonateSlide = new Swiper(".donate__send-form-inner", {
   grabCursor: true,
   spaceBetween: 5,
   pagination: {
