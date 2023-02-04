@@ -100,27 +100,70 @@
 
     <main class="main">
         
-        <section class="intro">
+        <section class="intro swiper">
             <div class="container">
-                <div class="intro__content">
-                        <h2 class="intro__title">A poor baby girl diagnosed with Spinal Cord Atrophy</h2>
-                        <p class="intro__subtitle">It is a great human tragedy that this poor little girl has to endure. The girl who is only one year and eleven months old, was...</p>
-                        <div class="intro__counter">
-                            <div class="intro__counter-item">
-                                <p class="intro__item-title">2,382,200</p>
-                                <p class="intro__item-subtitle">Required</p>
-                            </div>
-                            <span class="intro__counter-line"></span>
-                            <div class="intro__counter-item">
-                                <p class="intro__item-title">2,082,200</p>
-                                <p class="intro__item-subtitle">Remaining</p>  
-                            </div>
+              <div class="intro__slider">
+
+                <div class="swiper-wrapper" pagination="true" pagination-dynamic-bullets="true">
+                  <div class="intro__content swiper-slide"> 
+                          <h2 class="intro__title">A poor baby girl diagnosed with Spinal Cord Atrophy</h2>
+                          <p class="intro__subtitle">It is a great human tragedy that this poor little girl has to endure. The girl who is only one year and eleven months old, was...</p>
+                          <div class="intro__counter">
+                              <div class="intro__counter-item">
+                                  <p class="intro__item-title">2,382,200</p>
+                                  <p class="intro__item-subtitle">Required</p>
+                              </div>
+                              <span class="intro__counter-line"></span>
+                              <div class="intro__counter-item">
+                                  <p class="intro__item-title">2,082,200</p>
+                                  <p class="intro__item-subtitle">Remaining</p>  
+                              </div>
+                          </div>
+                          <div class="intro__links">
+                              <a href="" class="secondary-button">More</a>
+                              <a href="" class="button">Donate now</a>
+                          </div>
+                  </div>
+                  <div class="intro__content swiper-slide"> 
+                    <h2 class="intro__title">A poor baby girl diagnosed with Spinal Cord Atrophy</h2>
+                    <p class="intro__subtitle">It is a great human tragedy that this poor little girl has to endure. The girl who is only one year and eleven months old, was...</p>
+                    <div class="intro__counter">
+                        <div class="intro__counter-item">
+                            <p class="intro__item-title">2,382,200</p>
+                            <p class="intro__item-subtitle">Required</p>
                         </div>
-                        <div class="intro__links">
-                            <a href="" class="secondary-button">More</a>
-                            <a href="" class="button">Donate now</a>
+                        <span class="intro__counter-line"></span>
+                        <div class="intro__counter-item">
+                            <p class="intro__item-title">2,082,200</p>
+                            <p class="intro__item-subtitle">Remaining</p>  
                         </div>
+                    </div>
+                    <div class="intro__links">
+                        <a href="" class="secondary-button">More</a>
+                        <a href="" class="button">Donate now</a>
+                    </div>
+                 </div>
+                 <div class="intro__content swiper-slide"> 
+              <h2 class="intro__title">A poor baby girl diagnosed with Spinal Cord Atrophy</h2>
+              <p class="intro__subtitle">It is a great human tragedy that this poor little girl has to endure. The girl who is only one year and eleven months old, was...</p>
+              <div class="intro__counter">
+                  <div class="intro__counter-item">
+                      <p class="intro__item-title">2,382,200</p>
+                      <p class="intro__item-subtitle">Required</p>
+                  </div>
+                  <span class="intro__counter-line"></span>
+                  <div class="intro__counter-item">
+                      <p class="intro__item-title">2,082,200</p>
+                      <p class="intro__item-subtitle">Remaining</p>  
+                  </div>
+              </div>
+              <div class="intro__links">
+                  <a href="" class="secondary-button">More</a>
+                  <a href="" class="button">Donate now</a>
+              </div>
+               </div>
                 </div>
+              </div>
             </div>
         </section>
 
@@ -649,7 +692,11 @@
     }
   }
         })
-        
+
+        var introSlide = new Swiper(".intro__slider",{
+          grabCursor: true,
+          spaceBetween: 5,
+        })
     </script>
     <script  src="./index.js"></script>
   </body>
