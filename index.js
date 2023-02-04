@@ -1,7 +1,7 @@
-
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
 const headerMenu = document.getElementById("header");
+
 
 // Open Close Navbar Menu on Click Burger
 if (burgerMenu && navbarMenu) {
@@ -11,6 +11,7 @@ if (burgerMenu && navbarMenu) {
     });
  }
  
+
  // Close Navbar Menu on Click Menu Links
  document.querySelectorAll(".header__menu-link").forEach((link) => {
     link.addEventListener("click", () => {
@@ -19,6 +20,7 @@ if (burgerMenu && navbarMenu) {
     });
  });
  
+
  // Change Header Background on Scrolling
  window.addEventListener("scroll", () => {
     if (this.scrollY >= 95) {
@@ -39,10 +41,12 @@ function changeText(selector, maxlength) {
      }
    }
  }
- const tt = "Assanabil has established, equipped and furnished more than 40 dispensaries and medical centers in the areas in need, and has also supported many government hospitals with the necessary medical devices. The foundation implements and operates many medical convoys and surgical and specialized"
- console.log(tt.length);
- changeText('.blog__card-title', 70);
- changeText('.slider__card-text', 290)
+
+
+ changeText('.blog__card-title', 55);
+
+ changeText('.slider__card-text', 290);
+
  changeText('.blog__card-text', 120);
 
 
