@@ -311,10 +311,6 @@
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-    .container {
-        max-width: 480px;
-        margin: 0 auto;
-    }
 
     .footer__content {
         padding: 35px 20px;
@@ -367,10 +363,6 @@
 @media screen and (max-width:480px) {
 
     /* base styles start */
-    .container {
-        max-width: 320px;
-        margin: 0 auto;
-    }
 
     .topbar__content {
         padding: 15px 10px;
@@ -1133,7 +1125,7 @@
 /* blog card styles start */
 
 .blog__card {
-    max-width: 385px;
+    max-width: 100%;
     height: auto;
     padding: 15px;
 
@@ -1498,7 +1490,7 @@
 
     .message__content,
     .message__left {
-        max-width: 300px;
+        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
