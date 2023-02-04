@@ -5,7 +5,7 @@
 }
 .donate__content{
     display: grid;
-    grid-template-columns: repeat(2, 625px);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .donate__left {
@@ -30,11 +30,9 @@
 }
 
 .donate__send-form-inputs {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 50px 40px;
     background: #FFFFFF;
     box-shadow: 0px 10px 40px rgba(51, 51, 51, 0.1);
@@ -42,9 +40,11 @@
 }
 
 .donate__send-form{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 0.2fr 0.2fr;
+}
+.donate__send-form-inner {
+    width: 600px; 
+}
+.donate-form__pagination {
 }
 
 .donate__send-form-input, .donate__send-form-select{
@@ -68,7 +68,7 @@
     border: 1px solid #7A7A7A;
     border-radius: 7px;
     
-    width: 565px;
+    width: 100%;
     height: 143px;
 
     font-family: 'Poppins';
@@ -99,13 +99,10 @@ select {
     background: var(--primary-color);
     border: 1px solid #7A7A7A;
     border-radius: 7px;
-}
 
-
-.donate__send-form-scroll {
     margin: 0 auto;
-    align-self: center;
 }
+
 
 @media screen and (max-width: 480px){
     .donate{
