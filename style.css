@@ -311,6 +311,10 @@
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+    }
 
     .footer__content {
         padding: 35px 20px;
@@ -700,11 +704,30 @@
     .intro__counter-line{
         max-height: 40px;
     }
+    .intro__item-title{
+        font-size:18px ;
+    }
+    .intro__counter-line{
+        max-height: 40px;
+    }
 }
 @media screen and (min-width:1200px) {
     .intro__content{
         padding: 70px 250px;
     }
+    .intro__title{
+        font-size: 35px;
+    }
+    .intro__item-title{
+        font-size:26px ;
+    }
+}
+
+.intro__title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2C2C2C;
+}
     .intro__title{
         font-size: 35px;
     }
@@ -984,14 +1007,14 @@
     position: relative;
 }
 
+
 .slider__card {
     position: relative;
     width: 100%;
     padding: 58px 46px 60px 46px;
 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
-
 .slider__card:first-child {
     background-image: url(./assets/images/slider-images-first.png);
 }
@@ -1043,7 +1066,14 @@
     font-size: 16px;
     color: #FFFFFF;
 }
-
+.slider__card:first-child,
+.slider__card:nth-child(2),
+.slider__card:nth-child(3),
+.slider__card:last-child {
+    background-position: center;
+    height: 100%;
+    border-radius: 29px;
+}
 .slider__controllers{
     display: none;
 }
@@ -1202,6 +1232,10 @@
     .difference__subtitle{
         margin: 14px 0px 22px 0px;
         font-size: 20px;
+    }
+    .difference__button{
+        padding: 10px 30px;
+        font-size: 14px;
     }
 }
 
@@ -1464,11 +1498,14 @@
 
     .message__content,
     .message__left {
+        max-width: 300px;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-
+    .message__send-input, .message__send-btn, .message__send-text{
+        max-width: 280px;
+    }
     .message__send {
         margin-top: 30px;
         padding: 20px;
