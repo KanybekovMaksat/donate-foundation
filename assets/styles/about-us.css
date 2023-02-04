@@ -1,7 +1,7 @@
 /* intro styles start */
 
 .blog-intro {
-    background-image: url(./assets/images/about-us-intro-bg.jpg);
+    background-image: url(../images/about-us-intro-bg.jpg);
 }
 
 .bintro__content {
@@ -22,8 +22,6 @@
     line-height: 27px;
     color: #111111;
 }
-
-/* intro styles end */
 
 
 .text-page {
@@ -58,7 +56,7 @@
 }
 
 .bank-accounts__content {
-    background-image: url(./assets/images/bank-accounts-bg.jpg);
+    background-image: url(../images/bank-accounts-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
