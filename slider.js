@@ -59,3 +59,14 @@ var introSlide = new Swiper(".intro__slider", {
     clickable: true,
   },
 });
+
+
+var introSlide = new Swiper(".donate__send-form", {
+  slidesPerView:1,
+  grabCursor: true,
+  spaceBetween: 5,
+  pagination: {
+    el: ".form__slider-pagination",
+    clickable: true,
+  },
+});
