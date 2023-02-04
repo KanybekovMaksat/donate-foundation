@@ -60,13 +60,11 @@ var introSlide = new Swiper(".intro__slider", {
   },
 });
 
-
-var introSlide = new Swiper(".donate__send-form", {
-  slidesPerView:1,
+var introSlide = new Swiper(".donate__send-form-inner", {
   grabCursor: true,
   spaceBetween: 5,
   pagination: {
-    el: ".form__slider-pagination",
+    el: ".donate-form__pagination",
     clickable: true,
   },
 });
