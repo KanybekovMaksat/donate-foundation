@@ -1028,6 +1028,7 @@
 }
 
 .moreaus__video iframe {
+    margin-top: 30px;
     border-radius: 20px;
 }
 
@@ -1130,6 +1131,8 @@
     position: absolute;
     right: -70px;
 }
+
+
 @media screen and (max-width:1270px) {
     .slider__card-text{
         max-width: 650px;
@@ -1864,43 +1867,6 @@
         font-size: 14px;
     }
 
-
-    /* .intro {
-        height: 280px;
-    }
-
-    .intro__content {
-        padding: 0;
-    }
-
-    .intro__counter-line {
-        width: 2px;
-        height: 70px;
-    }
-
-    .intro__title {
-        font-size: 26px;
-    }
-
-    .intro__subtitle {
-        font-size: 12px;
-    }
-
-    .intro__item-title {
-        font-size: 18px;
-    }
-
-    .intro__item-subtitle {
-        font-size: 12px;
-    }
-
-    .intro__links {
-        margin-top: 25px;
-    } */
-
-
-
-
     .aboutus__content {
         display: grid;
         row-gap: 10px;
@@ -2066,12 +2032,6 @@
 
     .blog__card-img img {
         max-width: 100%;
-    }
-    .partners__content {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-        justify-items: center;
     }
 }
 

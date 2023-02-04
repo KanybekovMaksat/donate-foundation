@@ -9,6 +9,16 @@ var swiper = new Swiper(".slider__content", {
 },
 });
 
+var aswiper = new Swiper(".a_slider__content", {
+  grabCursor: true,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.acustom-next',
+    prevEl: '.acustom-prev',
+},
+});
+
+
 var slider = new Swiper(".partners__slider", {
   slidesPerView: 3,
   grabCursor: true,
