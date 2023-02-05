@@ -1,6 +1,8 @@
 
 
 .blog-intro {
+    max-height: 265px;
+    background-repeat: no-repeat;
     background-image: url(../../images/blog-intro.png);
 }
 
@@ -117,7 +119,11 @@
         justify-content: center;
     }
 }
-
+@media screen and (min-width:1050px) and (max-width:1250px) {
+    .bintro__content{
+        padding: 70px 0px 103px 30px;
+    }
+}
 @media screen and (max-width: 1200px) {
     .bnews__wrapper {
         width: 100%;
