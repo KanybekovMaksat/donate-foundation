@@ -129,6 +129,10 @@ select {
     .donate__left-text {
         text-align: center;
     }
+    .donate__send-form-inputs { 
+        width: 95%;
+        padding: 40px 30px;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -170,7 +174,7 @@ select {
 
 @media screen and (max-width: 700px) {
     .donate__send-form-inputs { 
-        width: 100%;
+        width: 90%;
         padding: 40px 30px;
     }
     .donate__send-form-inner {
@@ -178,7 +182,7 @@ select {
         height: 300px;
     }
     .donate__send-form-btn{
-        width: 100%;
+        width: 90%;
         height: 50px;
     }
 }
