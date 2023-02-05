@@ -887,20 +887,20 @@
 
 .category__card:first-child {
     border-radius: 24px 0px 0px 24px;
-    background-image: url(./assets/images/health.png);
+    background-image: url(../images/health.png);
 }
 
 .category__card:nth-child(2) {
-    background-image: url(./assets/images/wells.png);
+    background-image: url(../images/wells.png);
 }
 
 .category__card:nth-child(3) {
-    background-image: url(./assets/images/education.png);
+    background-image: url(../images/education.png);
 }
 
 .category__card:last-child {
     border-radius: 0px 24px 24px 0px;
-    background-image: url(./assets/images/community.png);
+    background-image: url(../images/community.png);
 }
 
 .category__card-title {
