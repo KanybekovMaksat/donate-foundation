@@ -25,7 +25,7 @@
 /* intro styles start */
 
 .blog-intro {
-    background-image: url(../images/about-us-intro-bg.jpg);
+    background-image: url(../../images/about-us-intro-bg.jpg);
 }
 
 .bintro__content {
@@ -80,7 +80,7 @@
 }
 
 .bank-accounts__content {
-    background-image: url(../images/bank-accounts-bg.jpg);
+    background-image: url(../../images/bank-accounts-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

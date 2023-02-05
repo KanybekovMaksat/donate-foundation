@@ -1,53 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-:root {
-    --primary-color: #0BBC5A;
-    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
 
-
-/* base styles start */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", "Arial", sans-serif, serif;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1235px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.button {
-    padding: 14.5px 82px;
-
-    background: var(--primary-color);
-    box-shadow: 0px 0px 14px rgba(228, 228, 228, 0.6);
-    border-radius: 7px;
-
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-
-/* base styles end */
-
-
-
-
-/* intro styles start */
 
 .blog-intro {
-    background-image: url(../images/blog-intro.png);
+    background-image: url(../../images/blog-intro.png);
 }
 
 .bintro__content {
@@ -69,10 +23,6 @@ body {
     color: #111111;
 }
 
-/* intro styles end */
-
-
-/* blog news section styles start */
 
 .blog-news {
     margin-top: 24px;
@@ -107,11 +57,6 @@ body {
     color: #FFFFFF;
 }
 
-/* blog news section styles end */
-
-
-
-/* blog card styles start */
 
 .blog__card {
     max-width: 100%;
@@ -159,7 +104,6 @@ body {
     color: var(--primary-color);
 }
 
-/* blog card styles end */
 @media screen and (max-width:480px) {
     .blog__card-title{
         font-size: 12px;
@@ -173,6 +117,7 @@ body {
         justify-content: center;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .bnews__wrapper {
         width: 100%;

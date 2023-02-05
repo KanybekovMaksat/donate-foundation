@@ -13,8 +13,8 @@ var aswiper = new Swiper(".a_slider__content", {
   grabCursor: true,
   spaceBetween: 50,
   navigation: {
-    nextEl: '.acustom-next',
-    prevEl: '.acustom-prev',
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
 },
 });
 
