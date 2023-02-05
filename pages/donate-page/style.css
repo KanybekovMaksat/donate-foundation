@@ -1,9 +1,8 @@
-
-
-.donate{
+.donate {
     margin-top: 41px;
 }
-.donate__content{
+
+.donate__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -12,21 +11,21 @@
     display: block;
 }
 
-.donate__title{
-    font-family: 'Poppins';     
+.donate__title {
+    font-family: 'Poppins';
     font-weight: 500;
     font-size: 40px;
-    color: #2C2C2C;   
+    color: #2C2C2C;
 }
 
-.donate__left-text{
+.donate__left-text {
     max-width: 525px;
 
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
-    color: #2C2C2C; 
+    color: #2C2C2C;
 }
 
 .donate__send-form-inputs {
@@ -52,18 +51,21 @@
     display: flex;
     justify-content: center;
 }
+
 .donate__send-form {
     text-align: center;
 }
+
 .donate__send-form-inner {
-    width: 700px; 
+    width: 700px;
     height: 300px;
 }
+
 .donate-form__pagination span {
     background-color: var(--primary-color);
 }
 
-.donate__send-form-input, .donate__send-form-select{
+.donate__send-form-input {
     margin: 5px 0px;
     padding: 18px;
     width: 100%;
@@ -79,11 +81,11 @@
 
 .donate__send-form-text {
     grid-row: 1/3;
-    
+
     padding: 18px;
     border: 1px solid #7A7A7A;
     border-radius: 7px;
-    
+
     width: 100%;
     height: 143px;
 
@@ -96,16 +98,39 @@
     color: #737373;
 }
 
-select {
-    padding-right: 25px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(./assets/images/select-arrow.svg);
+.select {
+    display: flex;
+    align-items: center;
 }
 
 
-.donate__send-form-btn{
+.donate__send-select-box {
+    margin: 10px 0px;
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #7A7A7A;
+    border-radius: 7px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.donate__send-form-select {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #737373;
+    border: none;
+    outline: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+
+
+.donate__send-form-btn {
     width: 600px;
     height: 50px;
 
@@ -119,17 +144,21 @@ select {
 }
 
 
-@media screen and (max-width: 480px){
-    .donate{
+@media screen and (max-width: 480px) {
+    .donate {
         margin-top: 30px;
     }
-    .donate__content,.donate__left{
+
+    .donate__content,
+    .donate__left {
         align-items: center;
     }
+
     .donate__left-text {
         text-align: center;
     }
-    .donate__send-form-inputs { 
+
+    .donate__send-form-inputs {
         width: 95%;
         padding: 40px 30px;
     }
@@ -140,48 +169,52 @@ select {
         text-align: center;
     }
 
-    .donate__content{
+    .donate__content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
     }
+
     .donate__send-form {
         width: 100%;
         justify-items: center;
     }
 
-    
+
     .donate__send-form-inputs {
         width: 100%;
         margin-top: 30px;
     }
-}   
+}
 
-@media screen and (max-width:1200px) { 
-    
-    .donate__send-form-inputs { 
+@media screen and (max-width:1200px) {
+
+    .donate__send-form-inputs {
         width: 580px;
-    
+
         padding: 50px 40px;
     }
+
     .donate__send-form-inner {
-        width: 650px; 
+        width: 650px;
         height: 300px;
 
     }
 }
 
 @media screen and (max-width: 700px) {
-    .donate__send-form-inputs { 
+    .donate__send-form-inputs {
         width: 90%;
         padding: 40px 30px;
     }
+
     .donate__send-form-inner {
-        width: 100%; 
+        width: 100%;
         height: 300px;
     }
-    .donate__send-form-btn{
+
+    .donate__send-form-btn {
         width: 90%;
         height: 50px;
     }
