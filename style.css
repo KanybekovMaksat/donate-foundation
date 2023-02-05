@@ -686,7 +686,7 @@
     width: 100%;
     max-height: 452px;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/intro-img.png);
+    background-image: url(../images/intro-img.png);
 }
 @media screen and (min-width:320px) {
     .intro__item-title{
@@ -1063,19 +1063,20 @@
     background-repeat: no-repeat;
 }
 .slider__card:first-child {
-    background-image: url(./assets/images/slider-images-first.png);
+
+    background-image: url(../images/slider-images-first.png);
 }
 
 .slider__card:nth-child(2) {
-    background-image: url(./assets/images/slider-images-second.png);
+    background-image: url(../images/slider-images-second.png);
 }
 
 .slider__card:nth-child(3) {
-    background-image: url(./assets/images/slider-images-third.png);
+    background-image: url(../images/slider-images-third.png);
 }
 
 .slider__card:last-child {
-    background-image: url(./assets/images/slider-images-fourteen.png);
+    background-image: url(../images/slider-images-fourteen.png);
 }
 
 .slider__card:first-child,
