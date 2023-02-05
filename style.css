@@ -887,20 +887,20 @@
 
 .category__card:first-child {
     border-radius: 24px 0px 0px 24px;
-    background-image: url(../images/health.png);
+    background-image: url(./images/health.png);
 }
 
 .category__card:nth-child(2) {
-    background-image: url(../images/wells.png);
+    background-image: url(./images/wells.png);
 }
 
 .category__card:nth-child(3) {
-    background-image: url(../images/education.png);
+    background-image: url(./images/education.png);
 }
 
 .category__card:last-child {
     border-radius: 0px 24px 24px 0px;
-    background-image: url(../images/community.png);
+    background-image: url(./images/community.png);
 }
 
 .category__card-title {
@@ -910,6 +910,7 @@
     text-align: center;
     color: #FFFFFF;
 }
+
 
 .category__bottom-subtitle {
     margin: 20px 0px 13px 0px;
@@ -953,14 +954,22 @@
     align-items: center;
 }
 
+
 .category__card-bottom {
     top: 80%;
     left: 0;
 }
 
+.category__card-bottom-last{
+    top: 75%;
+}
+
 .category__card:hover .category__card-content .category__card-bottom {
     top: 2%;
 }
+
+
+
 
 .partners {
     margin: 45px 0px;
@@ -976,6 +985,8 @@
 .partners__item-img {
     mix-blend-mode: difference;
 }
+
+
 
 
 /* partners styles end */
@@ -1048,6 +1059,7 @@
 .slider {
     position: relative;
     margin-top: 67px;
+    margin-bottom: 50px;
 }
 
 .swiper {
@@ -1061,6 +1073,8 @@
     padding: 58px 46px 60px 46px;
 
     background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 29px;
 }
 .slider__card:first-child {
 
@@ -1079,14 +1093,6 @@
     background-image: url(../images/slider-images-fourteen.png);
 }
 
-.slider__card:first-child,
-.slider__card:nth-child(2),
-.slider__card:nth-child(3),
-.slider__card:last-child {
-    background-position: center;
-    height: 100%;
-    border-radius: 29px;
-}
 
 .slider__card-title {
     font-family: 'Poppins';
@@ -1101,6 +1107,8 @@
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
+
+    max-width: 700px;
 }
 
 .slider__card-btn {
@@ -1113,14 +1121,6 @@
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
-}
-.slider__card:first-child,
-.slider__card:nth-child(2),
-.slider__card:nth-child(3),
-.slider__card:last-child {
-    background-position: center;
-    height: 100%;
-    border-radius: 29px;
 }
 .slider__controllers{
     display: none;
@@ -1135,22 +1135,17 @@
 }
 
 
-@media screen and (max-width:1270px) {
-    .slider__card-text{
-        max-width: 650px;
-        font-size: 16px;
-    }
-}
 @media screen and (min-width:1390px){
     .slider__controllers {
         display: flex;
         align-items: center;
         position: relative;
-        bottom: 200px;
+        bottom: 180px;
         z-index: 99;
     }
 }
 /* slider styles end */
+
 
 
 
@@ -1424,12 +1419,7 @@
 
 
 @media screen and (min-width:300px) and (max-width: 481px) {
-    .blog__button{
-        margin: 20px 42px;
 
-        width: 100%;
-        text-align: center;
-    }
     .intro__content {
         padding: 23px;
     }
@@ -1455,6 +1445,8 @@
         align-items: center;
     }
 
+
+
     .aboutus__content {
         display: flex;
     }
@@ -1476,6 +1468,9 @@
         margin-left: 7px;
     }
 
+
+
+
     .moreaus__content {
         flex-direction: column;
         align-items: flex-start;
@@ -1496,9 +1491,11 @@
         height: 200px;
     }
 
-    .moreaus__video button {
+    .moreaus__video-play {
         display: none;
     }
+
+
 
     .category__content {
         display: flex;
@@ -1512,6 +1509,8 @@
         border-radius: 0px 0px 20px 20px;
     }
 
+
+
     .partners__content {
         display: flex;
     }
@@ -1520,6 +1519,8 @@
         max-width: 100px;
         max-height: 70px;
     }
+
+
 
     .blog__card-img img {
         width: 100%;
@@ -1538,6 +1539,17 @@
     .blog__card-text{
         font-size: 12px;
     }
+    .blog__button{
+        margin: 20px 42px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
     .difference__title {
         font-size: 25px;
         line-height: 28px;
@@ -1546,6 +1558,8 @@
     .difference__subtitle {
         font-size: 16px;
     }
+
+
 
     .message {
         margin-top: 30px;
@@ -1599,58 +1613,41 @@
         height: 70px;
     }
 
+
+
     .slider {
         margin-bottom: 40px;
     }
 
     .slider__card {
-        padding: 20px;
-        border-radius: 24px;
+        padding: 40px;
         width: 100%;
-        height: auto;
-    }
-
-    .slider__card:first-child,
-    .slider__card:first-child,
-    .slider__card:nth-child(2),
-    .slider__card:nth-child(3),
-    .slider__card:last-child {
-        background-position: center;
+        height: 350px;
     }
 
     .slider__card-title {
-        font-weight: 500;
         font-size: 30px;
-        line-height: 45px;
+        line-height: 25px;
 
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .slider__card-text {
-        margin: 0px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
         color: #FFFFFF;
 
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        max-width: 300px;
     }
-
     .slider__card-btn {
-        padding: 12px 60px;
+        display: inline-block;
     }
 }
-@media screen and (min-width:1000px) {
-    .blog__title{
-        margin-top: 50px;
-    }
-}
-@media screen and (min-width:481px) and (max-width:768px) {
-    .blog__button{
-        margin: 20px 42px;
 
-        width: 100%;
-        text-align: center;
-    }
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
     .intro__content {
         padding: 23px;
     }
@@ -1676,6 +1673,7 @@
         align-items: center;
     }
 
+
     .aboutus__content {
         display: flex;
     }
@@ -1697,6 +1695,8 @@
         margin-left: 7px;
     }
 
+
+
     .moreaus__content {
         flex-direction: column;
         align-items: flex-start;
@@ -1714,12 +1714,15 @@
     .moreaus__video iframe {
         margin-top: 34px;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
 
-    .moreaus__video button {
+    .moreaus__video-play {
         display: none;
     }
+
+
+
 
     .category__content {
         display: flex;
@@ -1733,14 +1736,14 @@
         border-radius: 0px 0px 20px 20px;
     }
 
-    .partners__content {
-        display: flex;
-    }
+
 
     .partners__item-img {
         max-width: 100px;
         max-height: 70px;
     }
+
+
 
     .blog__card-img img {
         width: 100%;
@@ -1759,14 +1762,29 @@
     .blog__card-text{
         font-size: 12px;
     }
+    .blog__button{
+        margin: 20px 42px;
+
+        width: 100%;
+        text-align: center;
+    }
+    .blog__card {
+        width: 100%;
+    }
+
+
+
+    
     .difference__title {
-        font-size: 25px;
-        line-height: 28px;
+        font-size: 30px;
     }
 
     .difference__subtitle {
-        font-size: 16px;
+        font-size: 20px;
     }
+
+
+
 
     .message {
         margin-top: 30px;
@@ -1820,24 +1838,18 @@
         height: 70px;
     }
 
+
+
     .slider {
         margin-bottom: 40px;
     }
 
     .slider__card {
-        padding: 20px;
-        border-radius: 24px;
+        padding: 40px;
         width: 100%;
-        height: auto;
+        max-height: 350px;
     }
 
-    .slider__card:first-child,
-    .slider__card:first-child,
-    .slider__card:nth-child(2),
-    .slider__card:nth-child(3),
-    .slider__card:last-child {
-        background-position: center;
-    }
 
     .slider__card-title {
         font-weight: 500;
@@ -1854,11 +1866,12 @@
         color: #FFFFFF;
 
         margin-bottom: 15px;
+
+        max-width: 600px;
     }
 
-    .slider__card-btn {
-        padding: 12px 60px;
-    }
+
+
     .button {
         padding: 10px 35px;
         font-size: 14px;
@@ -1868,113 +1881,6 @@
         padding: 10px 30px;
         font-size: 14px;
     }
-
-    .aboutus__content {
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .aboutus__item {
-        margin-left: 30px;
-    }
-
-    .aboutus__item-img {
-        width: 55px;
-        height: 55px;
-    }
-
-    .aboutus__item-title {
-        font-size: 22px;
-    }
-
-    .aboutus__item-subtitle {
-        font-size: 16px;
-    }
-
-
-
-
-
-    .moreaus__content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .moreaus__subtitle {
-        width: 100%;
-    }
-
-    .moreaus__video {
-        align-self: stretch
-    }
-
-    .moreaus__video iframe {
-        width: 100%;
-        height: 280px;
-    }
-
-    .moreaus__video button {
-        display: none;
-    }
-
-
-
-    .category__content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .category__card:first-child {
-        border-radius: 20px 20px 0px 0px;
-    }
-    .category__card:last-child {
-        border-radius: 0px 0px 20px 20px;
-    }
-
-
-    .partners__content {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
-        justify-items: center;
-    }
-
-    .partners__item-img {
-        max-width: 100px;
-        max-height: 70px;
-    }
-
-
-
-    .blog__card {
-        width: 100%;
-    }
-
-    .blog__card-img img {
-        width: 100%;
-    }
-
-    .blog__wrapper {
-        margin: 15px 0px;
-        display: grid;
-        row-gap: 35px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-
-
-
-    .difference__title {
-        font-size: 30px;
-    }
-
-    .difference__subtitle {
-        font-size: 20px;
-    }
-
 
 
 
@@ -2000,10 +1906,19 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
+    .intro__content{
+        padding: 30px ;
+    }
+    .intro__title{
+        font-size: 28px;
+    }
+
 
     .aboutus__item-info {
         margin-left: 20px;
     }
+
+    
     .message__content,
     .message__left {
         display: flex;
@@ -2014,6 +1929,9 @@
         width: 100%;
         margin-top: 30px;
     }
+
+
+
     .moreaus__content {
         flex-direction: column;
         align-items: flex-start;
@@ -2029,18 +1947,13 @@
     }
 
 
+
     .blog__card {
         max-width: 450px;
     }
 
     .blog__card-img img {
         max-width: 100%;
-    }
-    .intro__content{
-        padding: 30px ;
-    }
-    .intro__title{
-        font-size: 28px;
     }
 }
 
@@ -2050,52 +1963,12 @@
         grid-template-rows: 1fr 1fr;
         gap: 15px;
     }
-    .partners__content {
-        column-gap: 50px;
+    .moreaus__video {
+        width: 580px;
     }
 }
 
-@media screen and (min-width:481px) and (max-width:768px) {
 
-    .slider {
-        margin-bottom: 40px;
-    }
-
-    .slider__card:first-child,
-    .slider__card:nth-child(2),
-    .slider__card:nth-child(3),
-    .slider__card:last-child {
-        background-position: center;
-    }
-
-    .slider__card {
-        padding: 40px;
-        border-radius: 24px;
-        width: 100%;
-        height: auto;
-    }
-
-    .slider__card-title {
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 45px;
-
-        margin-bottom: 15px;
-    }
-
-    .slider__card-text {
-        margin: 0px;
-        font-size: 16px;
-        line-height: 25px;
-        color: #FFFFFF;
-
-        margin-bottom: 15px;
-    }
-
-    .slider__card-btn {
-        padding: 12px 60px;
-    }
-}
 
 @media screen and (min-width:720px) and (max-width:1220px) {
 
@@ -2118,5 +1991,4 @@
     .category__card:last-child {
         border-radius: 0px 0px 20px 0px;
     }
-
 }
