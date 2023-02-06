@@ -3,6 +3,7 @@
 .blog-intro {
     max-height: 265px;
     background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../../images/blog-intro.png);
 }
 

@@ -24,7 +24,8 @@
 /* intro styles start */
 
 .blog-intro {
-    background-image: url(../images/blog-intro.png);
+    background-position: center;
+    background-image: url(../../images/blog-intro.png);
 }
 
 .bintro__content {
