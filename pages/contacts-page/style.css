@@ -49,10 +49,6 @@
     height: 44px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .message__left-social-item:not(:last-child) {
@@ -70,12 +66,12 @@
 .message__send-form{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1.6fr 1fr;
 }
 .message__send-input,.message__send-btn,.message__send-text {
     margin: 5px 0px;
     padding: 18px;
-    max-width: 545px;
+    width: 100%;
     max-height: 60px;
     background: #FFFFFF;
     border: 1px solid #7A7A7A;
@@ -86,6 +82,9 @@
     font-size: 16px;
     color: #151515;
 }
+.message__send-text {
+    max-height: 100px;
+}
 .message__send-btn{
     color: white;
     background: var(--primary-color);
@@ -95,6 +94,7 @@
     .message__content,.message__left{
         display: flex;
         flex-direction: column;
+        text-align: start;
     }
     .message__send {
         width: 100%;
@@ -116,7 +116,7 @@
         max-width: 235px;
     }
     .message__content,.message__left{
-        align-items: center;
+        
     }
     .message__left-contacts{
         display: flex;

@@ -1901,8 +1901,8 @@
         flex-direction: column;
     }
 
-    .message__left-text {
-        text-align: center;
+    .message__title {
+        text-align: start;
     }
 
     .message__send {
@@ -1929,7 +1929,7 @@
     .message__left {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
     .message__send {
         width: 100%;

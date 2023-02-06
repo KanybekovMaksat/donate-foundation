@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
@@ -88,14 +89,17 @@
     </div>
   </header>
     <main class="main">
-        <section class="blog-intro">
+        <div class="blog-intro-container">
+          <section class="blog-intro">
             <div class="container">
-            <div class="bintro__content">
-                <h1 class="bintro__title">Blog</h1>
-                <p class="bintro__subtitle">Read our blog, stay up to date with the latest news</p>
+              <div class="bintro__content">
+                  <h1 class="bintro__title">Blog</h1>
+                  <p class="bintro__subtitle">Read our blog, stay up to date with the latest news</p>
+              </div>
             </div>
-            </div>
-        </section>
+          </section>
+        </div>
+        
         <section class="blog-detail">
             <div class="container">
                 <ul class="breadcrumb">
@@ -106,14 +110,15 @@
                 <div class="blog-detail__inner">
                     <div class="blog-detail__text">
                         <h3 class="blog-detail__title">Opening of a mosque / Anas bin Malik</h3>
-                        <p class="text-img">
-                            <img src="../../images/blog-detail-img.jpg" alt="">
+                        <p class="blog-detail__text-img">
+                            <img src="../../images/blog-detail-img.jpg" alt="" class="text-img-top">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur. Vulputate id ultrices amet tempus auctor. Lobortis facilisi mattis congue pharetra lorem. Sem pellentesque sit enim sapien. Varius orci pharetra sem volutpat malesuada viverra. Aliquam ultricies elementum nulla morbi varius adipiscing. Accumsan sapien ac rutrum nec id elementum fermentum purus sed. Egestas habitant amet sit nisl id vivamus elementum in. Fames curabitur diam pellentesque turpis sed etiam etiam diam duis. Nunc a semper vitae amet amet dictum sed vitae. Libero massa semper tempor facilisis elit turpis sem bibendum. Facilisis eget adipiscing vulputate fringilla molestie amet aliquam. In in lobortis vestibulum vestibulum vulputate metus eget quam.
                             </p>
                             <p>
                                 Eget risus condimentum at nibh risus eleifend ac sed pulvinar. Justo in at aliquam sit aliquet commodo velit nibh. Pretium lacus neque sem interdum sollicitudin pulvinar ornare tincidunt. Integer nibh ornare nulla eget porttitor porttitor porta molestie. Tristique placerat quis proin tortor id vitae elementum id fringilla. Eget mattis vitae erat quis ultricies. Enim vitae non pellentesque facilisi platea sagittis amet massa fusce. Urna sed et eu gravida non non vulputate tristique.
                             </p>
+                            <img src="../../images/blog-detail-img.jpg" alt="" class="text-img-bottom">
                         </p>
                     </div>
                     <div class="blog-detail__text">
@@ -133,9 +138,91 @@
                             Eros arcu interdum arcu cras senectus velit quisque id posuere. Pellentesque pellentesque rhoncus morbi et mi. Ut phasellus quam at mollis amet nunc tortor posuere. Amet scelerisque risus a egestas tellus felis sed urna morbi. Vitae ut enim vehicula eu rutrum ac turpis adipiscing. Convallis in rhoncus eleifend egestas velit. Risus nisl sapien sem nec.
                         </p>
                     </div>
+                    <a href="#" class="blog-detail-btn">Load more articles</a>
                 </div>
             </div>
         </section>
+
+
+        <section class="blog-slider">
+          <div class="container">
+            <div class="blog-slider__content swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="blog__card">
+                    <div class="blog__card-img">
+                      <img
+                      class="blog__card-img"
+                        src="../../images/blog-card-first.png"
+                        alt="our blog-images"
+                      />
+                    </div>
+                    <div class="blog__card-content blog-slider__card-content">
+                      <p class="blog__card-date">18.02.2022</p>
+                      <h4 class="blog__card-title">
+                        Opening of a mosque / Anas bin Malik
+                      </h4>
+                      <p class="blog__card-text">
+                        Al-Sanabel Foundation inaugurates the Anas bin Malik Mosque in
+                        the John Areq area, Tlass Governorate, Kyrgyzstan, and the
+                        opening was Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi itaque tenetur! Et alias rerum, tempore tempora ducimus aliquam dolores culpa quas earum tenetur, pariatur eaque quod iste vero nam.
+                      </p>
+                      <a href="#" class="blog__card-link">Learn More...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog__card">
+                    <div class="blog__card-img">
+                      <img
+                      class="blog__card-img"
+                        src="../../images/blog-card-first.png"
+                        alt="our blog-images"
+                      />
+                    </div>
+                    <div class="blog__card-content">
+                      <p class="blog__card-date">18.02.2022</p>
+                      <h4 class="blog__card-title">
+                        Opening of a mosque / Anas bin Malik
+                      </h4>
+                      <p class="blog__card-text">
+                        Al-Sanabel Foundation inaugurates the Anas bin Malik Mosque in
+                        the John Areq area, Tlass Governorate, Kyrgyzstan, and the
+                        opening was Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi itaque tenetur! Et alias rerum, tempore tempora ducimus aliquam dolores culpa quas earum tenetur, pariatur eaque quod iste vero nam.
+                      </p>
+                      <a href="#" class="blog__card-link">Learn More...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog__card">
+                    <div class="blog__card-img">
+                      <img
+                      class="blog__card-img"
+                        src="../../images/blog-card-first.png"
+                        alt="our blog-images"
+                      />
+                    </div>
+                    <div class="blog__card-content">
+                      <p class="blog__card-date">18.02.2022</p>
+                      <h4 class="blog__card-title">
+                        Opening of a mosque / Anas bin Malik
+                      </h4>
+                      <p class="blog__card-text">
+                        Al-Sanabel Foundation inaugurates the Anas bin Malik Mosque in
+                        the John Areq area, Tlass Governorate, Kyrgyzstan, and the
+                        opening was Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi itaque tenetur! Et alias rerum, tempore tempora ducimus aliquam dolores culpa quas earum tenetur, pariatur eaque quod iste vero nam.
+                      </p>
+                      <a href="#" class="blog__card-link">Learn More...</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="swiper-pagination blog-slider__pagination"></div>
+            </div>
+          </div>
+        </section>
+
 
         <section class="blog">
             <div class="container">
@@ -347,5 +434,7 @@
       </div>
     </footer>
     <script src="../../index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="../../slider.js"></script>
 </body>
 </html>
