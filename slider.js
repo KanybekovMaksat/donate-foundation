@@ -69,3 +69,13 @@ var DonateSlide = new Swiper(".donate__send-form-inner", {
   },
 });
 
+
+
+var DonateSlide = new Swiper(".blog-slider__content", {
+  grabCursor: true,
+  spaceBetween: 5,
+  pagination: {
+    el: ".blog-slider__pagination",
+    clickable: true,
+  },
+});

@@ -23,11 +23,20 @@
 }
 
 /* intro styles start */
+.blog-intro-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+
+    display: inline;
+}
 
 .blog-intro {
-    width: 100%;
     max-height: 265px;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../../images/about-us-intro-bg.jpg);
 }
 
@@ -153,6 +162,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .blog-intro-container {
+        display: block;
+    }
+    .blog-intro {
+        background-image: url(../../images/about-us-intro-480.jpg);
+    }
+
     .video-page iframe {
         height: 200px;
     } 
