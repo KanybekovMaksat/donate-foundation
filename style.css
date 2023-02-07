@@ -1552,10 +1552,6 @@
         text-align: center;
     }
 
-
-
-
-
     .difference__title {
         font-size: 25px;
         line-height: 28px;
@@ -1565,8 +1561,6 @@
         font-size: 16px;
     }
 
-
-
     .message {
         margin-top: 30px;
     }
@@ -1575,7 +1569,7 @@
     .message__left {
         width: 100%;
         display: flex;
-        align-items: center;
+
         flex-direction: column;
     }
     .message__send-input, .message__send-btn, .message__send-text{
