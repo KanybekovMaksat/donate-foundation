@@ -6,7 +6,14 @@
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
         0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+    .ytp-impression-link{
+    display: none;
+}
 
+
+.ytp-large-play-button,.ytp-button,.ytp-large-play-button-red-bg{
+    display: none;
+}
 /* base styles start */
 
 * {
@@ -1583,12 +1590,12 @@
         display: none;
     }
     .whatsapp {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
     }
     
     .telegram {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
         z-index: 8;
     }
@@ -1599,11 +1606,11 @@
      }
 
     .telegram-active {
-        bottom: 18%;
+        bottom: 32%;
     }
 
     .whatsapp-active {
-        bottom: 12%;
+        bottom: 20%;
     }
 
     .help-open,
@@ -1831,11 +1838,11 @@
      }
 
     .telegram-active {
-        bottom: 18%;
+        bottom: 32%;
     }
 
     .whatsapp-active {
-        bottom: 12%;
+        bottom: 20%;
     }
 
     .help-open,
@@ -1843,8 +1850,6 @@
         width: 70px;
         height: 70px;
     }
-
-
 
     .slider {
         margin-bottom: 40px;
@@ -1876,8 +1881,6 @@
         max-width: 500px;
     }
 
-
-
     .button {
         padding: 10px 35px;
         font-size: 14px;
@@ -1887,8 +1890,6 @@
         padding: 10px 30px;
         font-size: 14px;
     }
-
-
 
     .message {
         margin-top: 30px;
@@ -1910,7 +1911,22 @@
         padding: 20px;
     }
 }
-
+@media screen and (min-width:620px) and (max-width:767px) {
+    .whatsapp {
+        bottom: 7%;
+        right: 4.5%;
+      }
+      .telegram {
+        bottom: 7%;
+        right: 4.5%;
+      }
+      .whatsapp-active {
+        bottom: 20%;
+      }
+      .telegram-active {
+        bottom: 32%;
+      }
+}
 @media screen and (min-width:768px) and (max-width:1024px) {
     .intro__content{
         padding: 30px ;

@@ -10,12 +10,12 @@
 }
 
 
-.container {
+/* .container {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
-}
+} */
 
 /* base styles end */
 
@@ -79,8 +79,6 @@
 }
 
 /* breadcrumb end */
-
-
 /* blog-detail start */
 
 .blog-detail__title {
@@ -127,7 +125,6 @@
 
 
 /* blog-detail end */
-
 
 
 

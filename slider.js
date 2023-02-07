@@ -68,3 +68,4 @@ var DonateSlide = new Swiper(".donate__send-form-inner", {
     clickable: true,
   },
 });
+
