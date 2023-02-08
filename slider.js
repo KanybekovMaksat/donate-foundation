@@ -48,7 +48,7 @@ var introSlide = new Swiper(".intro__slider", {
   grabCursor: true,
   spaceBetween: 5,
   pagination: {
-    el: ".intro__pagination",
+    el: ".slider__pagination",
     clickable: true,
   },
 });
