@@ -127,7 +127,7 @@
         display: none;
     }
     .message__left-text,.message__title {
-        text-align: center;
+        text-align: start;
     }
 }
 

@@ -69,6 +69,8 @@ var DonateSlide = new Swiper(".donate__send-form-inner", {
   },
 });
 
+
+
 var DonateSlide = new Swiper(".blog-slider__content", {
   grabCursor: true,
   spaceBetween: 5,
