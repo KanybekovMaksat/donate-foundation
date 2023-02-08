@@ -131,6 +131,7 @@
 
 
 .donate__send-form-btn {
+    margin-top: 24px;
     width: 600px;
     height: 50px;
 
@@ -141,6 +142,37 @@
     border: 1px solid #7A7A7A;
     border-radius: 7px;
 
+}
+
+.donate__send-form-inner .donate__slider-controls {
+    position: relative;
+    z-index: 12;
+    bottom: 20px;
+}
+
+.donate__send-form-inner .donate__slider-controls .donate-form__pagination {
+    text-align: center;
+}
+
+.donate__send-form-inner .donate__slider-controls .donate-form__pagination .swiper-pagination-bullet {
+    width: 13px;
+    height: 12px;
+    display: inline-block;
+    background: var(--primary-color);
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: opacity 0.5s, background-color 0.5s, width 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s;
+}
+
+.donate__send-form-inner .donate__slider-controls .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+
+.donate__send-form-inner .donate__slider-controls .donate-form__pagination .swiper-pagination-bullet-active {
+    background: var(--primary-color);
+    width: 50px;
+    transition-delay: 0s;
 }
 
 
