@@ -254,10 +254,11 @@
             <a href="../blogdetail-page/index.html" class="moreaus__btn">Learn More</a>
           </div>
           <div class="moreaus__video">
-            <iframe width="620" height="315" id="youtube-video" src="https://www.youtube.com/embed/5nDY1he1WMo"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/embed/5nDY1he1WMo" target="_blank" class="moreaus__video-play"><img
+            <div id="moreaus__video-player"></div>
+         <div id="moreaus__video-thumbnail_container" class="thumbnail_container">
+          <img class="thumbnail" id="thumbnail" />
+          </div>
+            <a  class=" moreaus__video-play"><img
                 src="../../images/video-play.svg" alt="play"></a>
           </div>
         </div>
@@ -544,6 +545,7 @@
       </div>
     </div>
   </div>
+
   <script src="../../index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="../../slider.js"></script>
