@@ -775,12 +775,12 @@
     }
 
     .whatsapp {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
     }
 
     .telegram {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
         z-index: 8;
     }
@@ -801,8 +801,8 @@
 
     .help-open,
     .help-close {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 }
 
