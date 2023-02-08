@@ -55,20 +55,6 @@ changeText('.category__bottom-subtitle', 240);
 changeText('.intro__subtitle', 129)
 
 
-// const helpBtn = document.querySelector('.help')
-// const whatsapp = document.getElementById('whatsapp')
-// const telegram = document.getElementById('telegram')
-// const messageAll = document.getElementById('help-open')
-// const messageClose = document.getElementById('help-close')
-
-
-// helpBtn.addEventListener('click', () => {
-//    whatsapp.classList.toggle('whatsapp-active');
-//    telegram.classList.toggle('telegram-active');
-//    messageClose.classList.toggle('help-close__active');
-//    messageAll.classList.toggle('message-all__active');
-// })
-
 
 
 //youtube script
@@ -115,4 +101,7 @@ document.getElementById("moreaus__video-player").style.display = "block";
 document.getElementById("moreaus__video-thumbnail_container").style.display = "none";
 player.playVideo();
 });
+
+
+
 

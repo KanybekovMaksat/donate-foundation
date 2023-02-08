@@ -551,7 +551,21 @@
       </div>
     </div>
   </div>
+  <script>
+    const helpBtn = document.querySelector('.help')
+    const whatsapp = document.getElementById('whatsapp')
+    const telegram = document.getElementById('telegram')
+    const messageAll = document.getElementById('help-open')
+    const messageClose = document.getElementById('help-close')
 
+
+    helpBtn.addEventListener('click', () => {
+      whatsapp.classList.toggle('whatsapp-active');
+      telegram.classList.toggle('telegram-active');
+      messageClose.classList.toggle('help-close__active');
+      messageAll.classList.toggle('message-all__active');
+    })
+  </script>
   <script src="../../index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="../../slider.js"></script>

@@ -9,15 +9,6 @@ var swiper = new Swiper(".slider__content", {
 },
 });
 
-var aswiper = new Swiper(".a_slider__content", {
-  grabCursor: true,
-  spaceBetween: 50,
-  navigation: {
-    nextEl: '.custom-next',
-    prevEl: '.custom-prev',
-},
-});
-
 
 var slider = new Swiper(".partners__slider", {
   slidesPerView: 3,
@@ -35,6 +26,7 @@ var slider = new Swiper(".partners__slider", {
   },
 });
 
+
 var sliderAbout = new Swiper(".aboutus-slider", {
   slidesPerView: 2,
   spaceBetween: 140,
@@ -51,6 +43,7 @@ var sliderAbout = new Swiper(".aboutus-slider", {
   },
 });
 
+
 var introSlide = new Swiper(".intro__slider", {
   grabCursor: true,
   spaceBetween: 5,
@@ -60,7 +53,8 @@ var introSlide = new Swiper(".intro__slider", {
   },
 });
 
-var DonateSlide = new Swiper(".donate__send-form-inner", {
+
+var donateSlide = new Swiper(".donate__send-form-inner", {
   grabCursor: true,
   spaceBetween: 5,
   pagination: {
@@ -70,8 +64,7 @@ var DonateSlide = new Swiper(".donate__send-form-inner", {
 });
 
 
-
-var DonateSlide = new Swiper(".blog-slider__content", {
+var blogSlide = new Swiper(".blog-slider__content", {
   grabCursor: true,
   spaceBetween: 5,
   pagination: {
