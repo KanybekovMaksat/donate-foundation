@@ -775,12 +775,12 @@
     }
 
     .whatsapp {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
     }
 
     .telegram {
-        bottom: 6.5%;
+        bottom: 7%;
         right: 6%;
         z-index: 8;
     }
@@ -801,8 +801,8 @@
 
     .help-open,
     .help-close {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -1544,6 +1544,7 @@
 
 
     .aboutus__content {
+        padding: 0px;
         display: flex;
     }
 
@@ -1557,11 +1558,11 @@
     }
 
     .aboutus__item-subtitle {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .aboutus__item-info {
-        margin-left: 7px;
+        margin-left: 3px;
     }
 
 
@@ -1783,6 +1784,7 @@
 
 
     .aboutus__content {
+        padding: 0px;
         display: flex;
     }
 
