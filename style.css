@@ -1936,6 +1936,12 @@
     }
 
 
+    .message__title {
+        text-align: start;
+    }
+
+
+
 
     .whatsapp {
         bottom: 6.5%;
@@ -2008,25 +2014,6 @@
         font-size: 14px;
     }
 
-    .message {
-        margin-top: 30px;
-    }
-
-    .message__content,
-    .message__left {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .message__title {
-        text-align: start;
-    }
-
-    .message__send {
-        margin-top: 30px;
-        padding: 20px;
-    }
 }
 
 @media screen and (min-width:620px) and (max-width:767px) {
