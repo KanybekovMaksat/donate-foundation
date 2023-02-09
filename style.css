@@ -1583,22 +1583,16 @@
 
     .moreaus__video iframe {
         margin: 0;
-        max-width: 320px;
+        max-width: 100%;
         height: 200px;
     }
 
     .moreaus__video-play {
-        top: 35%;
-        left: -30px; 
+        display: none;
     }
     
-    .moreaus__video-play img{
-        width: 60px;
-        height: 60px; 
-    }
-
     #thumbnail {
-        max-width: 320px;
+        max-width: 100%;
         height: 200px;
     }
 
@@ -1835,17 +1829,11 @@
         max-height: 250px;
     }
     .moreaus__video-play {
-        top: 35%;
-        left: -45px; 
-    }
-    
-    .moreaus__video-play img{
-        width: 80px;
-        height: 80px; 
+        display: none;
     }
 
     #thumbnail {
-        max-width: 480px;
+        max-width: 100%;
         max-height: 250px;
     }
 
@@ -2155,7 +2143,7 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 600px) {
+/* @media screen and (min-width: 480px) and (max-width: 600px) {
     .moreaus__video iframe {
         max-width: 380px;
         height: 200px;
@@ -2192,4 +2180,4 @@
         width: 50px;
         height: 50px; 
     }
-}
+} */
