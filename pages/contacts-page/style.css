@@ -115,16 +115,10 @@
         padding: 18px;
         max-width: 235px;
     }
-    .message__content,.message__left{
-        
-    }
+    
     .message__left-contacts{
         display: flex;
-        align-items: center;
-        column-gap: 70px;
-    }
-    .message__left-contacts-text{
-        display: none;
+        flex-direction: column;
     }
     .message__left-text,.message__title {
         text-align: start;

@@ -896,11 +896,6 @@
     margin-top: 37px;
 }
 
-@media screen and (min-width:1000px) {
-    .intro__content {
-        padding: 100px 150px 150px 150px;
-    }
-}
 
 
 .intro__slider .slider__controls {
@@ -942,7 +937,10 @@
     display: flex;
     justify-content: space-around;
 }
-
+.intro__container {
+    max-width: 1250px;
+    margin: 80px auto;
+}
 .aboutus__item-img {
     width: 60px;
 }
@@ -1152,7 +1150,7 @@
 
 .moreaus__video-play {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: -50px;
 
     background: none;
@@ -1534,10 +1532,12 @@
 }
 
 
+
+
 @media screen and (min-width:300px) and (max-width: 481px) {
 
-    .intro__content {
-        padding: 23px;
+    .intro__container {
+        margin: 23px;
     }
 
     .intro__title {
@@ -1591,7 +1591,6 @@
     .moreaus__content {
         flex-direction: column;
         align-items: flex-start;
-        gap: 30px;
     }
 
     .moreaus__subtitle {
@@ -1599,21 +1598,24 @@
     }
 
     .moreaus__video {
-        align-self: stretch;
+        margin: 0 auto;
     }
 
     .moreaus__video iframe {
-        margin-top: 34px;
-        width: 100%;
+        margin: 0;
+        max-width: 100%;
         height: 200px;
-
-
-
     }
 
     .moreaus__video-play {
         display: none;
     }
+    
+    #thumbnail {
+        max-width: 100%;
+        height: 200px;
+    }
+
 
 
 
@@ -1777,8 +1779,8 @@
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-    .intro__content {
-        padding: 23px;
+    .intro__container {
+        margin: 23px;
     }
 
     .intro__title {
@@ -1830,7 +1832,6 @@
     .moreaus__content {
         flex-direction: column;
         align-items: flex-start;
-        gap: 30px;
     }
 
     .moreaus__subtitle {
@@ -1838,21 +1839,26 @@
     }
 
     .moreaus__video {
-        align-self: stretch;
+        display: block;
+        margin: 0 auto;
     }
 
     .moreaus__video iframe {
-        margin-top: 34px;
-        width: 100%;
-        height: 300px;
+        margin: 0;
+        max-width: 480px;
+        max-height: 250px;
     }
-
     .moreaus__video-play {
         display: none;
     }
 
+    #thumbnail {
+        max-width: 100%;
+        max-height: 250px;
+    }
 
 
+    
 
     .category__content {
         display: flex;
@@ -1900,7 +1906,7 @@
     .blog__button {
         margin: 20px 0;
 
-        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -1948,6 +1954,12 @@
     .message__left-links {
         display: none;
     }
+
+
+    .message__title {
+        text-align: start;
+    }
+
 
 
 
@@ -2022,25 +2034,6 @@
         font-size: 14px;
     }
 
-    .message {
-        margin-top: 30px;
-    }
-
-    .message__content,
-    .message__left {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .message__title {
-        text-align: start;
-    }
-
-    .message__send {
-        margin-top: 30px;
-        padding: 20px;
-    }
 }
 
 @media screen and (min-width:620px) and (max-width:767px) {
@@ -2064,8 +2057,8 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-    .intro__content {
-        padding: 30px;
+    .intro__container {
+        margin: 30px;
     }
 
     .intro__title {
@@ -2157,3 +2150,41 @@
     }
 }
 
+/* @media screen and (min-width: 480px) and (max-width: 600px) {
+    .moreaus__video iframe {
+        max-width: 380px;
+        height: 200px;
+    }
+    #thumbnail {
+        max-width: 380px;
+        height: 200px;
+    }
+    .moreaus__video-play {
+        top: 35%;
+        left: -30px; 
+    }
+    .moreaus__video-play img{
+        width: 70px;
+        height: 70px; 
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .moreaus__video iframe {
+        max-width: 260px;
+        height: 150px;
+    }
+    #thumbnail {
+        max-width: 260px;
+        height: 150px;
+    }
+    .moreaus__video-play {
+        top: 35%;
+        left: -25px; 
+    }
+    .moreaus__video-play img{
+        width: 50px;
+        height: 50px; 
+    }
+} */
