@@ -34,10 +34,6 @@
 }
 
 .nav-active {
-    text-decoration: none;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
     color: #0BBC5A;
 }
 
@@ -201,6 +197,9 @@
     align-items: center;
     color: black;
 }
+.header__menu-link:hover{
+    color: #0BBC5A;
+}
 
 .header__btn {
     padding: 9px 25px;
@@ -271,7 +270,28 @@
     top: 0.5rem;
     transform: rotate(-135deg);
 }
-
+.header__menu-language{
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .header__menu-language{
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 13px;
+    }
+    .header__language-btn{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid #0BBC5A;
+    }
+    .header__language-active{
+        background: #0BBC5A;
+        color: #FFFFFF;
+    }
+}
 .footer {
     margin-top: 50px;
     background-color: #F2FFF8;
