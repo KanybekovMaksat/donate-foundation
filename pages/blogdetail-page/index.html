@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="page">
   <div class="topbar">
     <div class="container">
       <div class="topbar__content">
@@ -64,6 +65,10 @@
         <div class="header__logo"><img src="../../images/assanabil-logo.png" class="logo">
         </div>
         <div class="header__menu" id="menu">
+          <div class="header__menu-language">
+            <button id="arab" class="header__language-btn">Ar</button>
+            <button id="english" class="header__language-btn header__language-active">En</button>
+          </div>
           <ul class="header__menu-inner">
             <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Assanabil
                 <img src="../../images/dropdown-icon.svg" alt="^" />
@@ -359,7 +364,6 @@
         </section>
 
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
@@ -438,6 +442,7 @@
         </div>
       </div>
     </footer>
+  </div>
     <script src="../../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="../../slider.js"></script>

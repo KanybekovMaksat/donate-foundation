@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="page">
   <div class="topbar">
     <div class="container">
       <div class="topbar__content">
@@ -62,10 +63,13 @@
   <header class="header" id="header">
     <div class="container">
       <nav class="navbar">
-        <div class="header__logo"><a href="../home-page/index.html"><img src="../../images/assanabil-logo.png"
-              class="logo"></a>
+        <div class="header__logo"><img src="../../images/assanabil-logo.png" class="logo">
         </div>
         <div class="header__menu" id="menu">
+          <div class="header__menu-language">
+            <button id="arab" class="header__language-btn">Ar</button>
+            <button id="english" class="header__language-btn header__language-active">En</button>
+          </div>
           <ul class="header__menu-inner">
             <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Assanabil
                 <img src="../../images/dropdown-icon.svg" alt="^" />
@@ -77,10 +81,8 @@
                 <img src="../../images/dropdown-icon.svg" alt="^" />
               </a></li>
             <li class="header__menu-item"><a href="../blog-page/index.html" class="header__menu-link">News</a></li>
-            <li class="header__menu-item"><a href="../contacts-page/index.html" class="header__menu-link">Contact Us</a>
-            </li>
-            <div class="header__button"><a href="../donate-page/index.html" class="header__menu-btn">Donate now</a>
-            </div>
+            <li class="header__menu-item"><a href="../contacts-page/index.html" class="header__menu-link">Contact Us</a></li>
+            <div class="header__button"><a href="../donate-page/index.html" class="header__menu-btn">Donate now</a></div>
           </ul>
         </div>
         <div class="header__burger" id="burger">
@@ -220,5 +222,6 @@
       </div>
     </div>
   </footer>
+  </div>
   <script src="../../index.js"></script>
 </body>

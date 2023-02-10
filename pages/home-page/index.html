@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="page">
   <div class="topbar">
     <div class="container">
       <div class="topbar__content">
@@ -65,6 +66,10 @@
         <div class="header__logo"><img src="../../images/assanabil-logo.png" class="logo">
         </div>
         <div class="header__menu" id="menu">
+          <div class="header__menu-language">
+            <button id="arab" class="header__language-btn">Ar</button>
+            <button id="english" class="header__language-btn header__language-active">En</button>
+          </div>
           <ul class="header__menu-inner">
             <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Assanabil
                 <img src="../../images/dropdown-icon.svg" alt="^" />
@@ -455,6 +460,26 @@
         </div>
       </div>
     </section>
+    <section class="help-message">
+      <div class="help">
+        <div class="help__content">
+          <div class="whatsapp" id="whatsapp">
+            <a href="#">
+              <img src="../../images/whatsapp.svg" alt="whatsapp">
+            </a>
+          </div>
+          <div class="telegram" id="telegram">
+            <a href="#">
+              <img src="../../images/telegram.svg" alt="telegram">
+            </a>
+          </div>
+          <div class="help" id="help">
+            <img src="../../images/help.svg" class="help-open" id="help-open" alt="helpOpen">
+            <img src="../../images/close.svg" id="help-close" class="help-close" alt="helpClose">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -534,23 +559,7 @@
       </div>
     </div>
   </footer>
-  <div class="help">
-    <div class="help__content">
-      <div class="whatsapp" id="whatsapp">
-        <a href="#">
-          <img src="../../images/whatsapp.svg" alt="whatsapp">
-        </a>
-      </div>
-      <div class="telegram" id="telegram">
-        <a href="#">
-          <img src="../../images/telegram.svg" alt="telegram">
-        </a>
-      </div>
-      <div class="help" id="help">
-        <img src="../../images/help.svg" class="help-open" id="help-open" alt="helpOpen">
-        <img src="../../images/close.svg" id="help-close" class="help-close" alt="helpClose">
-      </div>
-    </div>
+
   </div>
   <script>
     const helpBtn = document.querySelector('.help')

@@ -104,6 +104,7 @@
     }
     .urgent__inner{
         display: grid;
+        gap: 10px;
         grid-template-columns: repeat(2, 247px);;
     }    
     .urgent__inner-img{
@@ -134,7 +135,14 @@
     }
     .urgent__inner{
         display: grid;
-        /* padding: 0px 80px; */
+        gap: 20px;
         grid-template-columns: repeat(2, 1fr);
     }    
+}
+@media screen and (min-width:320px) and (max-width:1220px) {
+    .urgent__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
 }

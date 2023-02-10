@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="page">
       <div class="topbar">
         <div class="container">
           <div class="topbar__content">
@@ -60,34 +61,38 @@
       </div>
       <header class="header" id="header">
         <div class="container">
-            <nav class="navbar">
-                <div class="header__logo"><img src="../../images/assanabil-logo.png"  class="logo">
-                </div>
-               <div class="header__menu" id="menu">
-                  <ul class="header__menu-inner">
-                     <li class="header__menu-item"><a href="../index.html" class="header__menu-link">Assanabil
-                        <img src="../../images/dropdown-icon.svg" alt="^" />
-                     </a></li>
-                     <li class="header__menu-item"><a href="#" class="header__menu-link">Our Programs
-                        <img src="../../images/dropdown-icon.svg" alt="^" />
-                     </a></li>
-                     <li class="header__menu-item"><a href="#" class="header__menu-link">Urgent Aid
-                        <img src="../../images/dropdown-icon.svg" alt="^" />
-                     </a></li>
-                     <li class="header__menu-item"><a href="../blog-page/index.html" class="header__menu-link">News</a></li>
-                     <li class="header__menu-item"><a href="../contacts-page/index.html" class="header__menu-link">Contact Us</a></li>
-                     <div class="header__button"><a href="../donate-page/index.html" class="header__menu-btn">Donate now</a></div> 
-                  </ul>
-               </div>
-               <div class="header__burger" id="burger">
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-             </div>
-             <div class="header__button"><a href="../donate-page/index.html" class="header__btn">Donate now</a></div>  
-            </nav>
+          <nav class="navbar">
+            <div class="header__logo"><img src="../../images/assanabil-logo.png" class="logo">
+            </div>
+            <div class="header__menu" id="menu">
+              <div class="header__menu-language">
+                <button id="arab" class="header__language-btn">Ar</button>
+                <button id="english" class="header__language-btn header__language-active">En</button>
+              </div>
+              <ul class="header__menu-inner">
+                <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Assanabil
+                    <img src="../../images/dropdown-icon.svg" alt="^" />
+                  </a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Our Programs
+                    <img src="../../images/dropdown-icon.svg" alt="^" />
+                  </a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Urgent Aid
+                    <img src="../../images/dropdown-icon.svg" alt="^" />
+                  </a></li>
+                <li class="header__menu-item"><a href="../blog-page/index.html" class="header__menu-link">News</a></li>
+                <li class="header__menu-item"><a href="../contacts-page/index.html" class="header__menu-link">Contact Us</a></li>
+                <div class="header__button"><a href="../donate-page/index.html" class="header__menu-btn">Donate now</a></div>
+              </ul>
+            </div>
+            <div class="header__burger" id="burger">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </div>
+            <div class="header__button"><a href="../donate-page/index.html" class="header__btn">Donate now</a></div>
+          </nav>
         </div>
-     </header>
+      </header>
   <main class="main">
     <div class="blog-intro-container">
       <section class="blog-intro">
@@ -407,10 +412,7 @@
       </div>
     </div>
   </footer>
-  <!-- footer end -->
-
-
-  <!-- link js -->
+  </div>
   <script src="../../index.js"></script>
 </body>
 
