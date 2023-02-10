@@ -1140,7 +1140,6 @@ main{
 .moreaus__video iframe {
     width: 625px;
     height: 320px;
-    margin-top: 30px;
     border-radius: 20px;
 }
 
@@ -2087,11 +2086,10 @@ main{
         gap: 15px;
     }
 
-    .moreaus__video {
+    /* .moreaus__video {
         width: 580px;
-    }
+    } */
 }
-
 
 
 @media screen and (min-width:720px) and (max-width:1220px) {
