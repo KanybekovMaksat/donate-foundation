@@ -75,8 +75,14 @@
 
     margin-bottom: 10px;
 }
+
+
+.aboutus {
+    margin-top: 30px;
+}
 .aboutus__video{
     position: relative;
+    text-align: center;
 }
 .aboutus__video-wrapper{
     display: flex;
@@ -91,12 +97,16 @@
     border: none;
 }
 .aboutus__video iframe {
+    display: block;
     width: 748px;
     height: 398px;
-    margin-top: 30px;
+    margin-top: 0px;
     border-radius: 20px;
-  }
-
+}
+.thumbnail {
+    width: 748px;
+    height: 398px;
+}
 
 .bank-accounts {
     border-radius: 20px;
@@ -153,11 +163,36 @@
     margin: 30px;
 }
 
+@media screen and (max-width: 850px) {
+    .thumbnail {
+        width: 600px;
+        height: 306px;
+    }
+    .aboutus__video iframe{
+        margin: 0 auto;
+        width: 600px;
+        height: 306px;
+    }
+    .aboutus__video-play {
+        left: -7%;
+    }
+}
+
 @media screen and (max-width: 769px) {
-    .video-page iframe {
-        width: 100%;
-        height: 250px;
-    } 
+    .aboutus__video-play {
+        top: 30%;
+        left: 40%;
+    }
+    .thumbnail {
+        width: 90%;
+        height: 90%;
+    }
+    .aboutus__video iframe{
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
 
 
     .bank-accounts__title {
@@ -173,6 +208,15 @@
 }
 
 @media screen and (max-width: 480px) {
+    .aboutus__video-play img {
+        width: 60px;
+        height: 60px;
+    }
+    .aboutus__video-play {
+        top: 35%;
+        left: 42%;
+    }
+
     .blog-intro-container {
         display: block;
     }
@@ -180,9 +224,6 @@
         background-image: url(../../images/about-us-intro-480.jpg);
     }
 
-    .video-page iframe {
-        height: 200px;
-    } 
 
 
     .bank-accounts__title {
