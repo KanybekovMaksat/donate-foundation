@@ -88,10 +88,14 @@
     display: flex;
     justify-content: center;
 }
+.aboutus__video-play img {
+    width: 120px;
+    height: 120px;
+}
 .aboutus__video-play{
     position: absolute;
-    top: 40%;
-    left: -50px;
+    top: 35%;
+    left: 42%;
     cursor: pointer;
     background: none;
     border: none;
@@ -173,15 +177,24 @@
         width: 600px;
         height: 306px;
     }
+    .aboutus__video-play img {
+        width: 100px;
+        height: 100px;
+    }
     .aboutus__video-play {
-        left: -7%;
+        top: 34%;
+        left: 42%;
     }
 }
 
 @media screen and (max-width: 769px) {
+    .aboutus__video-play img {
+        width: 75px;
+        height: 75px;
+    }
     .aboutus__video-play {
-        top: 30%;
-        left: 40%;
+        top: 34%;
+        left: 43%;
     }
     .thumbnail {
         width: 90%;
