@@ -123,7 +123,7 @@ if (event.data === YT.PlayerState.ENDED) {
 }
 
 document.querySelector('.moreaus__video-play').addEventListener('click', function () {
-//  this.style.display = "none";
+ this.style.display = "none";
 document.getElementById("moreaus__video-player").style.display = "block";
 document.getElementById("moreaus__video-thumbnail_container").style.display = "none";
 player.playVideo();
