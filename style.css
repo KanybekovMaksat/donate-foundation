@@ -1155,8 +1155,10 @@ main{
     top: 40%;
     left: -50px;
 
+    cursor: pointer;
     background: none;
     border: none;
+    
 }
 
 
@@ -1610,7 +1612,12 @@ main{
     }
 
     .moreaus__video-play {
-        display: none;
+        top: 30%;
+        left: 41%;
+    }
+    .moreaus__video-play img{
+        width: 70px;
+        height: 70px;
     }
     
     #thumbnail {
@@ -1851,8 +1858,10 @@ main{
         max-height: 250px;
     }
     .moreaus__video-play {
-        display: none;
+        top: 30%;
+        left: 40%;
     }
+   
 
     #thumbnail {
         max-width: 100%;
