@@ -367,7 +367,6 @@ main{
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-
     .footer__content {
         padding: 35px 20px;
     }
@@ -408,17 +407,7 @@ main{
     }
 
 }
-
-
-
-
-/* responsive design */
-
-
-
 @media screen and (max-width:481px) {
-
-    /* base styles start */
 
     .topbar__content {
         padding: 15px 10px;
@@ -436,9 +425,11 @@ main{
     .header__btn {
         display: none;
     }
-
+    .header__logo{
+        position: absolute;
+        left: 20px;
+    }
     .logo {
-        margin-left: -125px;
         max-width: 100px;
     }
 
@@ -513,7 +504,10 @@ main{
     .header__btn {
         display: none;
     }
-
+    .header__logo{
+        position: absolute;
+        left: 30px;
+    }
     .logo {
         margin-left: auto;
     }
