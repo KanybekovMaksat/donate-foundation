@@ -114,7 +114,7 @@ p.style.display = "none";
 
 var t = document.querySelector(".thumbnail");
 console.log(t);
-t.src = "../../images/youtube-video.png";
+t.src = "./images/youtube-video.png";
 
 function onPlayerStateChange(event) {
 if (event.data === YT.PlayerState.ENDED) {

@@ -367,7 +367,6 @@ main{
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-
     .footer__content {
         padding: 35px 20px;
     }
@@ -408,17 +407,7 @@ main{
     }
 
 }
-
-
-
-
-/* responsive design */
-
-
-
 @media screen and (max-width:481px) {
-
-    /* base styles start */
 
     .topbar__content {
         padding: 15px 10px;
@@ -436,9 +425,11 @@ main{
     .header__btn {
         display: none;
     }
-
+    .header__logo{
+        position: absolute;
+        left: 20px;
+    }
     .logo {
-        margin-left: -125px;
         max-width: 100px;
     }
 
@@ -513,7 +504,10 @@ main{
     .header__btn {
         display: none;
     }
-
+    .header__logo{
+        position: absolute;
+        left: 30px;
+    }
     .logo {
         margin-left: auto;
     }
@@ -1503,12 +1497,6 @@ main{
     z-index: 8;
 }
 
-/* .whatsapp img,
-.telegram img {
-    width: 70px;
-    height: 70px;
-} */
-
 .telegram-active {
     bottom: 35%;
 }
@@ -1534,9 +1522,6 @@ main{
 .message-all__active {
     display: none;
 }
-
-
-
 
 @media screen and (min-width:300px) and (max-width: 481px) {
 
@@ -1625,9 +1610,6 @@ main{
         height: 200px;
     }
 
-
-
-
     .category__content {
         display: flex;
         flex-direction: column;
@@ -1642,8 +1624,6 @@ main{
         border-radius: 0px 0px 20px 20px;
     }
 
-
-
     .partners__content {
         display: flex;
     }
@@ -1652,8 +1632,6 @@ main{
         max-width: 100px;
         max-height: 70px;
     }
-
-
 
     .blog__card-img img {
         width: 100%;
@@ -1736,11 +1714,11 @@ main{
     }
 
     .telegram-active {
-        bottom: 32%;
+        bottom: 180px;
     }
 
     .whatsapp-active {
-        bottom: 20%;
+        bottom: 120px;
     }
 
     .help-open,
@@ -1784,8 +1762,6 @@ main{
         display: inline-block;
     }
 }
-
-
 
 @media screen and (min-width:481px) and (max-width:768px) {
     .intro__container {
@@ -1862,14 +1838,10 @@ main{
         left: 40%;
     }
    
-
     #thumbnail {
         max-width: 100%;
         max-height: 250px;
     }
-
-
-    
 
     .category__content {
         display: flex;
@@ -1885,14 +1857,10 @@ main{
         border-radius: 0px 0px 20px 20px;
     }
 
-
-
     .partners__item-img {
         max-width: 100px;
         max-height: 70px;
     }
-
-
 
     .blog__card-img img {
         width: 100%;
@@ -1925,9 +1893,6 @@ main{
         width: 100%;
     }
 
-
-
-
     .difference__title {
         font-size: 30px;
     }
@@ -1935,9 +1900,6 @@ main{
     .difference__subtitle {
         font-size: 20px;
     }
-
-
-
 
     .message {
         margin-top: 30px;
@@ -1971,9 +1933,6 @@ main{
         text-align: start;
     }
 
-
-
-
     .whatsapp {
         bottom: 6.5%;
         right: 6%;
@@ -1992,11 +1951,11 @@ main{
     }
 
     .telegram-active {
-        bottom: 32%;
+        bottom: 180px;
     }
 
     .whatsapp-active {
-        bottom: 20%;
+        bottom: 120px;
     }
 
     .help-open,
