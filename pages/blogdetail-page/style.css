@@ -178,6 +178,11 @@
 
 @media screen and (max-width: 480px) {
 
+    .difference,
+    .message {
+        display: none;
+    }
+
     .blog-intro-container {
         display: block;
     }

@@ -118,6 +118,11 @@
 }
 
 @media screen and (max-width:480px) {
+
+    .difference {
+        display: none;
+    }
+
     .blog-intro-container {
         display: block;
     }
