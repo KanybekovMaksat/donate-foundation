@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="page">
   <div class="topbar">
     <div class="container">
       <div class="topbar__content">
@@ -459,6 +460,26 @@
         </div>
       </div>
     </section>
+    <section class="help-message">
+      <div class="help">
+        <div class="help__content">
+          <div class="whatsapp" id="whatsapp">
+            <a href="#">
+              <img src="../../images/whatsapp.svg" alt="whatsapp">
+            </a>
+          </div>
+          <div class="telegram" id="telegram">
+            <a href="#">
+              <img src="../../images/telegram.svg" alt="telegram">
+            </a>
+          </div>
+          <div class="help" id="help">
+            <img src="../../images/help.svg" class="help-open" id="help-open" alt="helpOpen">
+            <img src="../../images/close.svg" id="help-close" class="help-close" alt="helpClose">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -538,23 +559,7 @@
       </div>
     </div>
   </footer>
-  <div class="help">
-    <div class="help__content">
-      <div class="whatsapp" id="whatsapp">
-        <a href="#">
-          <img src="../../images/whatsapp.svg" alt="whatsapp">
-        </a>
-      </div>
-      <div class="telegram" id="telegram">
-        <a href="#">
-          <img src="../../images/telegram.svg" alt="telegram">
-        </a>
-      </div>
-      <div class="help" id="help">
-        <img src="../../images/help.svg" class="help-open" id="help-open" alt="helpOpen">
-        <img src="../../images/close.svg" id="help-close" class="help-close" alt="helpClose">
-      </div>
-    </div>
+
   </div>
   <script>
     const helpBtn = document.querySelector('.help')
