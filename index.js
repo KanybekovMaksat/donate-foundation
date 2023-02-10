@@ -85,47 +85,4 @@ changeText('.intro__subtitle', 129)
 
 
 //youtube script
-var tag = document.createElement('script');
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-
-window.onYouTubeIframeAPIReady = function () {
-player = new YT.Player('moreaus__video-player', {
-    height: '244',
-    width: '434',
-    videoId: 'iogcY_4xGjo',  // youtube video id
-    playerVars: {
-        'autoplay': 0,
-        'rel': 0,
-        'showinfo': 0
-    },
-    events: {
-        'onStateChange': onPlayerStateChange
-    }
-});
-};
-
-var p = document.getElementById("moreaus__video-player");
-p.style.display = "none";
-
-var t = document.querySelector(".thumbnail");
-console.log(t);
-t.src = "./images/youtube-video.png";
-
-function onPlayerStateChange(event) {
-if (event.data === YT.PlayerState.ENDED) {
-    document.querySelector('.moreaus__video-play').style.display = "block";
-}
-}
-
-document.querySelector('.moreaus__video-play').addEventListener('click', function () {
- this.style.display = "none";
-document.getElementById("moreaus__video-player").style.display = "block";
-document.getElementById("moreaus__video-thumbnail_container").style.display = "none";
-player.playVideo();
-});
 

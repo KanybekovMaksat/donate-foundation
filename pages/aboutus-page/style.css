@@ -75,18 +75,27 @@
 
     margin-bottom: 10px;
 }
-
-
-.moreaus {
-    margin-top: 30px;
+.aboutus__video{
+    position: relative;
 }
-.moreaus__content {
+.aboutus__video-wrapper{
     display: flex;
     justify-content: center;
 }
-.moreaus__video iframe{
-    margin: 0;
+.aboutus__video-play{
+    position: absolute;
+    top: 40%;
+    left: -50px;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
+.aboutus__video iframe {
+    width: 748px;
+    height: 398px;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
 
 
 .bank-accounts {
